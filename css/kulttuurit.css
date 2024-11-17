@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+header {
+    background-color: #f5aa6b;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+/*home-nappulan muotoilu*/
+a.navbar-brand {
+    color: black;
+    font-size: 40px;
+}
+
+/*lisätty välistystä nav-elementtien väliin*/
+.nav-item {
+    margin: 0 15px;
+}
+
+/*vaihdettu alasvetovalikon taustaväri ja fonttikoko*/
+ul.dropdown-menu {
+    background-color: #f8c39b;
+    font-size: 20px;
+}
+
+/*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä*/
+a.dropdown-item:hover {
+    background-color: #f28c38;
+}
+
+main {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+#content {
+    height: 75vh;
+    background-color: #fde2d3;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+footer {
+    background-color: #f5aa6b;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    height: 10vh;
+    margin-top: auto;
+}
+p.footer {
+    text-align: end;
+}

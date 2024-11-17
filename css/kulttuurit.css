@@ -1,3 +1,6 @@
+
+/*Korjaa skaalautuvuusongelmat!*/
+
 html, body {
     height: 100%;
     margin: 0;
@@ -7,7 +10,7 @@ html, body {
 }
 
 header {
-    background-color: #f5aa6b;
+    background-color: #94b4d0;
     font-size: 30px;
     color: black;
     font-weight: bold;
@@ -27,28 +30,42 @@ a.navbar-brand {
 
 /*vaihdettu alasvetovalikon taustaväri ja fonttikoko*/
 ul.dropdown-menu {
-    background-color: #f8c39b;
+    background-color: #6791b8;
     font-size: 20px;
 }
 
-/*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä*/
+/*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä. Väri ok?*/
 a.dropdown-item:hover {
-    background-color: #f28c38;
+    background-color: #3a6da1;
 }
 
 main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
 
+
+/* Kuvan asettelu kesken! / Testaus */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+}
+
+img {
+    margin-top: auto;
+    width: 300px;
+    max-width: 100%;
+}
+
 #content {
     height: 75vh;
-    background-color: #fde2d3;
+    background-color: #c9d9e7;
     flex-grow: 1;
     overflow: auto;
 }
 
 footer {
-    background-color: #f5aa6b;
+    background-color: #94b4d0;
     font-size: 30px;
     color: black;
     font-weight: bold;

@@ -55,9 +55,8 @@ main {
 img {
     max-width: 84%;
 }
-
-#imgBeforeGuess {
-    filter: blur(15px) hue-rotate(300deg) contrast(150%) brightness(60%) grayscale(50%);
+.imgBeforeGuess {
+    filter: blur(7px) hue-rotate(300deg) contrast(150%) brightness(60%) grayscale(50%);
 }
 
 .option {

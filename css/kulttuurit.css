@@ -45,7 +45,7 @@ main {
 
 .speech-bubble {
     position: relative;
-    background: #fbf8f2;
+    background: #f3f9ff;
     border-radius: .4em;
     padding: 5px;
     margin: 5px;
@@ -59,7 +59,7 @@ main {
     width: 0;
     height: 0;
     border: 14px solid transparent;
-    border-top-color: #fbf8f2;
+    border-top-color: #f3f9ff;
     border-bottom: 0;
     margin-left: -7px;
     margin-bottom: -14px;
@@ -72,7 +72,7 @@ main {
     height: 300px;
 }
 
-img {
+.image-container img {
     margin-top: auto;
     width: 300px;
     max-width: 100%;

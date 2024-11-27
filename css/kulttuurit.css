@@ -43,6 +43,27 @@ main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
 
+.speech-bubble {
+    position: relative;
+    background: #fbf8f2;
+    border-radius: .4em;
+    padding: 5px;
+    margin: 5px;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-top-color: #fbf8f2;
+    border-bottom: 0;
+    margin-left: -7px;
+    margin-bottom: -14px;
+}
 
 /* Kuvan asettelu kesken! / Testaus */
 .image-container {

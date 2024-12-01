@@ -7,7 +7,9 @@
             "Angkor Wat",
             "Machu Picchu"
         ],
-        "correctAnswer": "Chichén Itzá"
+        "tip": "Tämä on Meksikon kuuluisin Maya-kaupunki",
+        "correctAnswer": "Chichén Itzá",
+        "funFact": "Kevät- ja syyspäiväntasauksina auringonlasku luo temppeliin optisen illuusion, joka näyttää kiemurtelevan käärmeen."
     },
     {
         "img": "2.jpg",
@@ -17,7 +19,9 @@
             "Akropolis",
             "Colosseum"
         ],
-        "correctAnswer": "Colosseum"
+        "tip": "Tämä muinainen amfiteatteri sijaitsee Roomassa, Italiassa",
+        "correctAnswer": "Colosseum",
+        "funFact": "Colosseumissa oli kerran valtava, avattava aurinkokatos!"
     },
     {
         "img": "3.jpg",
@@ -27,7 +31,9 @@
             "Big Ben",
             "Empire State Building"
         ],
-        "correctAnswer": "Eiffel-torni"
+        "tip": "Tämä rautarakennelma sijaitsee Pariisissa, Ranskassa",
+        "correctAnswer": "Eiffel-torni",
+        "funFact": "Tornin metallirakenne laajenee kuumuuden vaikutuksesta ja voi kasvaa jopa 15 senttimetriä lämpiminä päivinä."
     },
     {
         "img": "4.jpg",
@@ -37,7 +43,9 @@
             "Luxorin temppeli",
             "Petra"
         ],
-        "correctAnswer": "Gizan pyramidit"
+        "tip": "Tämä faaraoiden hautapaikkanakin tunnettu nähtävyys sijaitsee Egyptissä",
+        "correctAnswer": "Gizan pyramidit",
+        "funFact": "Suurin pyramidi oli maailman korkein rakennus yli 3800 vuoden ajan!"
     },
     {
         "img": "5.jpg",
@@ -47,7 +55,9 @@
             "Terrakotta-armeija",
             "Angkor Thom"
         ],
-        "correctAnswer": "Kiinan muuri"
+        "tip": "Tämä monesta osasta koostuva muinainen rakennelma sijaitsee Kiinassa",
+        "correctAnswer": "Kiinan muuri",
+        "funFact": "Vaikka usein väitetään, että muuri näkyisi avaruudesta paljain silmin, tämä on myytti – se on liian kapea, jotta sen voisi erottaa Maata kiertävältä radalta."
     },
     {
         "img": "6.jpg",
@@ -57,7 +67,9 @@
             "Eiffel-torni",
             "Colosseum"
         ],
-        "correctAnswer": "Pisan kalteva torni"
+        "tip": "Tämä tunnettu maamerkki sijaitsee Ihmeiden aukiolla, Italiassa",
+        "correctAnswer": "Pisan kalteva torni",
+        "funFact": "Tornin kallistuminen alkoi jo sen rakentamisen alkuvaiheessa, noin vuonna 1173, kun maaperä ei kestänyt raskaita rakennustöitä."
     },
     {
         "img": "7.jpg",
@@ -67,7 +79,9 @@
             "Kristus-patsas",
             "Pietarinkirkko"
         ],
-        "correctAnswer": "Kristus-patsas"
+        "tip": "Tämä ikoninen patsas seisoo korkealla vuoren huipulla, levittäen käsiään yli Rio de Janeiron kaupungin.",
+        "correctAnswer": "Kristus-patsas",
+        "funFact": "Patsas on 30 metriä korkea ja sen käsivarret ulottuvat 28 metriin!"
     },
     {
         "img": "8.jpg",
@@ -77,7 +91,9 @@
             "Golden Gate -silta",
             "Vapaudenpatsas"
         ],
-        "correctAnswer": "Vapaudenpatsas"
+        "tip": "Tämä patsas seisoo Liberty Islandilla New Yorkissa ja symboloi vapautta ja toivoa",
+        "correctAnswer": "Vapaudenpatsas",
+        "funFact": "Patsas oli alun perin väriltään kuparinruskea, mutta ajan myötä se on saanut vihertävän värinsä kuparin hapettumisen seurauksena."
     },
     {
         "img": "9.jpg",
@@ -87,7 +103,9 @@
             "Sydneyn oopperatalo",
             "Vapaudenpatsas"
         ],
-        "correctAnswer": "Sydneyn oopperatalo"
+        "tip": "Tämä rakennus sijaitsee aivan sataman äärellä Australiassa",
+        "correctAnswer": "Sydneyn oopperatalo",
+        "funFact": "Rakennuksen alkuperäinen väri oli suunniteltu olevan punertavan oranssi!"
     },
     {
         "img": "10.jpg",
@@ -97,6 +115,8 @@
             "Burj Khalifa",
             "Taj Mahal"
         ],
-        "correctAnswer": "Taj Mahal"
+        "tip": "Tämä mausoleumi sijaitsee Agrassa, Intiassa",
+        "correctAnswer": "Taj Mahal",
+        "funFact": "Taj Mahal rakennettiin Mughal-keisari Shah Jahanin käskystä hänen lempivaimonsa Mumtaz Mahalin muistoksi, joka kuoli synnytyksen jälkeen vuonna 1631."
     }
 ]

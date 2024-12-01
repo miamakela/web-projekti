@@ -52,8 +52,8 @@ main {
     position: relative;
     background: #fbf8f2;
     border-radius: .4em;
-    padding: 5px;
-    margin: 5px;
+    padding: 15px;
+    margin: 15px;
 }
 
 .speech-bubble::after {
@@ -70,8 +70,13 @@ main {
     margin-bottom: -14px;
 }
 
-#tiger {
-    max-width: 70%;
+#points {
+    align-content: center;
+    text-align: center;
+    background-color: #4a7c59;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
 }
 
 img {

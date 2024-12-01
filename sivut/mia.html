@@ -47,27 +47,28 @@
         <div id="content" class="container-fluid">
             <div class="row d-flex flex-wrap">
                 <!-- Aside osio (2/12 kolumnia pienillä näytöillä allekkain) -->
-                <aside class="col-12 col-lg-4 p-3">
-                    <h5>Sivupalkki</h5>
-                    <p id="points">?/10</p>
-                    <p>Tässä on aside-osio.
-                        Lähde matkaoppaaksi Tiuku-tiikerille, plaa, plaa, plaa
+                <aside class="col-12 col-lg-3 p-3">
+                    <h2>Maailman ihmeet</h2>
+                    <p>Kuinka hyvin tunnet maailman nähtävyydet ja muut kuuluisat paikat?
+                        Tässä pelissä sinulle esitetään epäselvä kuva nähtävyydestä ja sinun tulee arvata vaihtoehdoista oikea.
                     </p>
-                    <div class="speech-bubble">Lähde mukaan seikkailuun maailman ympäri!</div>
+                    <div class="speech-bubble">Vinkki:<br><span id="tip"></span></div>
                     <img id="tiger" src="../img/yhteiset/tiuku_tiikeri.webp" width="300" alt="tiger">
                 </aside>
+                <div id="circle" class="col-12 col-lg-1 p-3">
+                    <p id="points"><span>0</span> / 10</p>
+                </div>
                 <!-- Pääsisältö (10/12 kolumnia pienillä näytöillä allekkain) -->
                 <div id="imageArea" class="col-12 col-lg-4 p-3">
-                    <img id="wonder" class="imgBeforeGuess" src="../img/mia/TajMahal.jpg" height="675" width="500" alt="Nähtävyys">
+                    <img id="wonder" class="imgBeforeGuess" src="" height="675" width="500" alt="Nähtävyys">
                 </div>
                 <div id="answerArea" class="col-12 col-lg-4 p-3">
-                    <h1>Vastausalue</h1>
-                    <p>Tässä on jokin vinkki ja vastauksen jälkeen hauska fakta</p>
+                    <p><span id="funFact"></span></p>
                     <ul class="options">
-                        <li class="option"><button>Option1</button></li>
-                        <li class="option"><button>Option2</button></li>
-                        <li class="option"><button>Option3</button></li>
-                        <li class="option"><button>Option4</button></li>
+                        <li class="option"></li>
+                        <li class="option"></li>
+                        <li class="option"></li>
+                        <li class="option"></li>
                     </ul>
                 </div>
             </div>    

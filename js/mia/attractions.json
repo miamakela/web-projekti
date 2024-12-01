@@ -1,0 +1,102 @@
+[
+    {
+        "img": "1.jpg",
+        "options": [
+            "Tikal",
+            "Chichén Itzá",
+            "Angkor Wat",
+            "Machu Picchu"
+        ],
+        "correctAnswer": "Chichén Itzá"
+    },
+    {
+        "img": "2.jpg",
+        "options": [
+            "Forum Romanum",
+            "Pantheon",
+            "Akropolis",
+            "Colosseum"
+        ],
+        "correctAnswer": "Colosseum"
+    },
+    {
+        "img": "3.jpg",
+        "options": [
+            "Golden Gate -silta",
+            "Eiffel-torni",
+            "Big Ben",
+            "Empire State Building"
+        ],
+        "correctAnswer": "Eiffel-torni"
+    },
+    {
+        "img": "4.jpg",
+        "options": [
+            "Teotihuacán",
+            "Gizan pyramidit",
+            "Luxorin temppeli",
+            "Petra"
+        ],
+        "correctAnswer": "Gizan pyramidit"
+    },
+    {
+        "img": "5.jpg",
+        "options": [
+            "Hadrianuksen valli",
+            "Kiinan muuri",
+            "Terrakotta-armeija",
+            "Angkor Thom"
+        ],
+        "correctAnswer": "Kiinan muuri"
+    },
+    {
+        "img": "6.jpg",
+        "options": [
+            "Pisan kalteva torni",
+            "Big Ben",
+            "Eiffel-torni",
+            "Colosseum"
+        ],
+        "correctAnswer": "Pisan kalteva torni"
+    },
+    {
+        "img": "7.jpg",
+        "options": [
+            "Daavid-patsas",
+            "Moai-patsaat",
+            "Kristus-patsas",
+            "Pietarinkirkko"
+        ],
+        "correctAnswer": "Kristus-patsas"
+    },
+    {
+        "img": "8.jpg",
+        "options": [
+            "Mount Rushmore",
+            "Washington-monumentti",
+            "Golden Gate -silta",
+            "Vapaudenpatsas"
+        ],
+        "correctAnswer": "Vapaudenpatsas"
+    },
+    {
+        "img": "9.jpg",
+        "options": [
+            "Guggenheim-museo",
+            "Burj Al Arab",
+            "Sydneyn oopperatalo",
+            "Vapaudenpatsas"
+        ],
+        "correctAnswer": "Sydneyn oopperatalo"
+    },
+    {
+        "img": "10.jpg",
+        "options": [
+            "Pisan kalteva torni",
+            "Pietarinkirkko",
+            "Burj Khalifa",
+            "Taj Mahal"
+        ],
+        "correctAnswer": "Taj Mahal"
+    }
+]

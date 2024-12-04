@@ -65,24 +65,27 @@ main {
     margin-bottom: -14px;
 }
 
-/* Kuvan asettelu kesken! / Testaus */
-.image-container {
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-}
-
-.image-container img {
-    margin-top: auto;
-    width: 300px;
-    max-width: 100%;
-}
 
 #content {
     height: 75vh;
     background-color: #c9d9e7;
     flex-grow: 1;
     overflow: auto;
+}
+
+#gameCanvas {
+    background-color: aliceblue;
+}
+
+#country-row div {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 5px;
+    border: 1px solid #000000;
+    text-align: center;
+    border-radius: 5px;
 }
 
 footer {

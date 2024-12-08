@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resetButton.disabled = false; // Ota resetButton käyttöön
 
         // Päivitä palaute
-        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat.'
+        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä.'
     }
 
     // Tyhjennä valinnat
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pairs = [] // Tyhjennä valitut parit
         isImageSelected = false // Nollaa valinta
 
-        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat.' // Palauta alkuperäinen palaute
+        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä.' // Palauta alkuperäinen palaute
         checkButton.disabled = false
         nextButton.disabled = true
     })

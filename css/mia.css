@@ -70,7 +70,7 @@ main {
     margin-bottom: -14px;
 }
 
-#points {
+#counter {
     align-content: center;
     text-align: center;
     background-color: #4a7c59;
@@ -92,10 +92,7 @@ img {
 
 .option {
     margin: 3vh;
-    border-radius: 10%;
-}
-
-button {
+    padding: 10px;
     width: 90%;
     height: 6vh;
     color: #cde2d3;
@@ -114,4 +111,18 @@ footer {
 }
 p.footer {
     text-align: end;
+}
+
+.correct {
+    background-color: greenyellow;
+    color: black;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.end {
+    text-align: center;
+    justify-content: center;
 }

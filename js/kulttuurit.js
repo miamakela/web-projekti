@@ -119,7 +119,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const associatedImage = pairs.find(p => p.type === 'image' && p.color === pair.color);
             if (associatedImage) {
                 const isCorrect = correctPairs.some(cp => cp.image === associatedImage.index && cp.country === pair.index);
-                if (isCorrect) correctCount++;
+                if (isCorrect) {
+                    correctCount++;
+                    // Merkitse oikeat vastaukset vihreäksi
+                    const correctImage = imageRow.querySelectorAll('img')[associatedImage.index];
+                    const correctCountry = countryRow.querySelectorAll('div')[pair.index];
+                    correctImage.style.border = `3px solid green`;
+                    correctCountry.style.border = `3px solid green`;
+                } else {
+                    // Merkitse väärät vastaukset punaiseksi
+                    const incorrectImage = imageRow.querySelectorAll('img')[associatedImage.index];
+                    const incorrectCountry = countryRow.querySelectorAll('div')[pair.index];
+                    incorrectImage.style.border = `3px solid red`;
+                    incorrectCountry.style.border = `3px solid red`;
+                }
             }
         });
 

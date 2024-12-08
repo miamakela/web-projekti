@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let shuffledCountries = [] // Tallentaa sekoitetut maat
     let score = 0
     let isImageSelected = false // Pitää kirjaa siitä, onko kuva valittu
+    let isChecked = false; // Tarkistuksen tila (onko vastaukset tarkistettu)
 
     const feedbackElement = document.getElementById('feedback')
     const gameRoundElement = document.getElementById('gameRound')
@@ -63,6 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Nollaa valinnat
         pairs = []
         isImageSelected = false // Nollaa tila
+        isChecked = false // Nollaa tarkistus
         checkButton.disabled = false
         nextButton.disabled = true
         resetButton.disabled = false; // Ota resetButton käyttöön
@@ -90,6 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Käsittele kuvan valinta
     imageRow.addEventListener('click', (event) => {
+        if (isChecked) return // Estä valinta, jos tarkistus on tehty (mutta ei estä klikkaamista)
         if (isImageSelected) return // Estä usean kuvan valinta peräkkäin
         const clickedImage = event.target
         if (clickedImage.tagName === 'IMG') {
@@ -105,6 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Käsittele maan valinta
     countryRow.addEventListener('click', (event) => {
+        if (isChecked) return; // Estä valinta, jos tarkistus on tehty
         if (!isImageSelected) return // Estä maan valinta ennen kuvan valintaa
         const clickedCountry = event.target
         // Varmista, että klikkaaja on div ja että se ei ole peliriviä
@@ -157,6 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
         score += correctCount
 
         feedbackElement.textContent = `Sait oikein ${correctCount}/${game.countries.length}!`
+        isChecked = true // Merkkaa tarkistus tehdyksi
         checkButton.disabled = true
         nextButton.disabled = false
         resetButton.disabled = true

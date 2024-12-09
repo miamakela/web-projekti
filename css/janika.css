@@ -7,16 +7,17 @@ html, body {
 }
 
 header {
-    background-color: #f3d77d;
-    font-size: 30px;
-    color: black;
+    background-color: #f3d77d ;
+    font-size: 25px;
+    color: white;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+ 
 }
 
 /*home-nappulan muotoilu*/
 a.navbar-brand {
-    color: black;
+    color: white;
     font-size: 40px;
 }
 
@@ -27,33 +28,45 @@ a.navbar-brand {
 
 /*vaihdettu alasvetovalikon taustaväri ja fonttikoko*/
 ul.dropdown-menu {
-    background-color: #f8c39b;
+    background-color: #fbf1c6;
     font-size: 20px;
 }
 
 /*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä*/
 a.dropdown-item:hover {
-    background-color: #f28c38;
+    background-color: #f3d77d ;
 }
 
 main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
 }
 
-#content {
-    height: 75vh;
-    background-color: #fde2d3;
-    flex-grow: 1;
-    overflow: auto;
+
+img {
+    max-width: 84%;
 }
 
+.option {
+    margin: 3vh;
+    border-radius: 10%;
+}
+
+button {
+    width: 90%;
+    height: 6vh;
+    color: #cde2d3;
+    border: 2px solid black;
+    background-color: #f3d77d;
+}
 .speech-bubble {
     position: relative;
     background: #fbf8f2;
+    border-width: 4px;
     border-radius: .4em;
     padding: 5px;
     margin: 5px;
+    text-align: center;
 }
 
 .speech-bubble::after {
@@ -70,15 +83,106 @@ main {
     margin-bottom: -14px;
 }
 
-footer {
-    background-color: #f5aa6b;
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #fbf1c6 ;
+    text-align: center;
+    
+}
+
+.peli {
+    display: grid;
+    justify-content: center;
+    grid-gap: 16px ;
+    grid-template-columns: repeat (6, 140px);
+    grid-template-rows: repeat (2, calc(140px / 2 *3));
+}
+
+.card {
+    height: calc(140px / 2 * 3);
+    width: 140px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+}
+
+.front-image {
+    width: 60px;
+    height: 60px;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card .front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card .back{
+    background-position: center center;
+    background-size: auto;
+    backface-visibility: hidden;
+}
+
+.reset
+{
+    padding: 15px 20px;
+    color: #fbf1c6 ;
+    background: #f3d77d;
+    border: none;
+    font: 1,5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.reset:focus 
+{
+    color:#f3d77d;
+    background:#fbf1c6 ;
+}
+
+
+
+.actions {
+    display: flex;
+    justify-content: center;
+}
+.actions button {
+    padding: 8px 16px;
     font-size: 30px;
-    color: black;
+    border-radius: 10px;
+    background-color: #fbf1c6;
+
+}
+
+footer {
+    background-color: #f3d77d;
+    font-size: 20px;
+    text-align: end;
+    color: white;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     height: 10vh;
     margin-top: auto;
-}
-p.footer {
-    text-align: end;
+    float:none
 }

@@ -60,6 +60,12 @@ p.footer {
 }
 
 /*oma osuus*/
+.tiuku-tiikeri {
+    width:100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
 
 #container,h2 {
     text-align: center;
@@ -117,6 +123,21 @@ p.footer {
     max-height: 100%;
     object-fit: contain; 
 }
+#game-over {
+    display: none;
+    justify-content: center; 
+    align-items: center; 
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 24px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white;
+    border-radius: 10px;
+    text-align: center; 
+}
 
 .country {
     margin: 5px;
@@ -130,7 +151,7 @@ p.footer {
   }
 
 .country:hover {
-    background-color:  #2ecc71
+    background-color:  #2fdc77
   }
   
 #image-number {
@@ -139,4 +160,22 @@ p.footer {
     font-weight: bold;
     margin-top: 10px;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;;
+}
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+
+    #content {
+        width: 95%; 
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {  font-size: 6vw; 
+    }
 }

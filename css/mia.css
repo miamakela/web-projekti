@@ -8,6 +8,7 @@ html, body {
 
 header {
     background-color: #74a182;
+    height: 15vh;
     font-size: 30px;
     color: black;
     font-weight: bold;
@@ -36,22 +37,24 @@ a.dropdown-item:hover {
     background-color: #4a7c59;
 }
 
+h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
 main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 aside {
     display: inline-block;
-}
-
-aside #tiger {
-    justify-self: end;
-    align-self:baseline;
+    justify-items: center;
+    align-content: end;
 }
 
 #content {
-    height: 75vh;
+    min-height: 75vh;
     background-color: #cde2d3;
     flex-grow: 1;
     overflow: auto;
@@ -61,8 +64,8 @@ aside #tiger {
     position: relative;
     background: #fbf8f2;
     border-radius: .4em;
-    padding: 15px;
-    margin: 15px;
+    padding: 20px;
+    margin: 20px;
 }
 
 .speech-bubble::after {
@@ -79,11 +82,21 @@ aside #tiger {
     margin-bottom: -14px;
 }
 
+#imageArea {
+    position: relative;
+}
+
+#circle {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
 #counter {
     align-content: center;
     text-align: center;
-    background-color: #4a7c59;
-    color: #cde2d3;
+    background: #fbf8f2;
+    border: solid black 1px;
     border-radius: 50%;
     width: 7rem;
     height: 7rem;
@@ -133,8 +146,12 @@ p.footer {
 }
 
 .end {
-    text-align: center;
-    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+#answerArea {
+    position: relative;
 }
 
 #answerArea p {
@@ -146,7 +163,22 @@ p.footer {
 #nextQuestionBtn {
     background-color: #4a7c59;
     color: #cde2d3;
+    position: absolute; 
+    right: 30px;
+}
 
+#homeBtn {
+    padding: 10px;
+    margin: 10px;
+    background-color: #4a7c59;
+    color: #cde2d3;
+}
+
+#retryBtn {
+    padding: 10px;
+    margin: 10px;
+    background-color: #4a7c59;
+    color: #cde2d3;
 }
 
 @media only screen and (max-width: 500px) {

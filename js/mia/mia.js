@@ -72,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const next = document.createElement("button")
         next.id = "nextQuestionBtn"
+        next.className = "flex-direction row"
         next.textContent = "Seuraava"
         next.onclick = nextQuestion
         answerArea.appendChild(next)
@@ -101,7 +102,16 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="end">
                 <h2>Peli päättyi!</h2>
                 <p>Sait ${score} pistettä kymmenestä mahdollisesta.</p>
+                <button id="homeBtn">Etusivulle</button> <button id="retryBtn">Uusi peli</button>
             </div>
         `
     }
+
+    document.getElementById("homeBtn").addEventListener('click', () => {
+        window.location.href = "./index.html"
+    })
+
+    document.getElementById("retryBtn").addEventListener('click', () => {
+        initGame()
+    })
 })

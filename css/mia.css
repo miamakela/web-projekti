@@ -41,6 +41,15 @@ main {
     font-size: 24px;
 }
 
+aside {
+    display: inline-block;
+}
+
+aside #tiger {
+    justify-self: end;
+    align-self:baseline;
+}
+
 #content {
     height: 75vh;
     background-color: #cde2d3;
@@ -74,14 +83,12 @@ main {
     align-content: center;
     text-align: center;
     background-color: #4a7c59;
+    color: #cde2d3;
     border-radius: 50%;
     width: 7rem;
     height: 7rem;
 }
 
-img {
-    max-width: 84%;
-}
 .imgBeforeGuess {
     filter: blur(7px) hue-rotate(300deg) contrast(150%) brightness(60%) grayscale(50%);
 }
@@ -91,10 +98,12 @@ img {
 }
 
 .option {
-    margin: 3vh;
+    list-style: none;
+    margin-left: -10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     padding: 10px;
-    width: 90%;
-    height: 6vh;
+    height: auto;
     color: #cde2d3;
     border: 2px solid black;
     background-color: #4a7c59;
@@ -109,6 +118,7 @@ footer {
     height: 10vh;
     margin-top: auto;
 }
+
 p.footer {
     text-align: end;
 }
@@ -125,4 +135,31 @@ p.footer {
 .end {
     text-align: center;
     justify-content: center;
+}
+
+#answerArea p {
+    margin: 30px;
+    justify-content: center;
+    text-align: left;
+}
+
+#nextQuestionBtn {
+    background-color: #4a7c59;
+    color: #cde2d3;
+
+}
+
+@media only screen and (max-width: 500px) {
+    img {
+        max-width: 100%;    
+    }
+    .option {
+        max-width: 100%;
+    }
+    }
+
+@media only screen and (min-width: 500px) {
+    img {
+        max-width: 100%;
+    }
 }

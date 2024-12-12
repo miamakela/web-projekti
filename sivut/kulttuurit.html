@@ -48,9 +48,13 @@
             <div class="row d-flex flex-wrap">
                 <!-- Aside osio (2/12 kolumnia pienillä näytöillä allekkain) -->
                 <aside class="col-12 col-lg-2 p-3">
-                    <h1>Tunnista Kulttuurit!</h1>
-                    <div class="speech-bubble">
-                        <p id="feedback"></p>
+                    <div class="row">
+                        <h2>Tunnista Kulttuurit!</h2>
+                    </div>
+                    <div class="row">
+                        <div class="speech-bubble">
+                            <p id="feedback"></p>
+                        </div>
                     </div>
                     <div class="image-container">
                         <img src="../img/yhteiset/tiuku_tiikeri.webp" alt="Kuva Tiuku-tiikeristä" class="img-fluid">
@@ -58,15 +62,13 @@
                 </aside>
 
                 <!-- Peliosio. -->
-                <div class="col-12 col-lg-10 p-3">
-                    <div class="row">
-                        <div id="game-round-row">
-                            <h5 id="gameRound"></h5>
-                        </div>
+                <div class="col-12 col-lg-10 p-2">
+                    <div id="game-round-row" class="col-12 col-lg-10 p-2">
+                        <h5 id="gameRound"></h5>
                     </div>
                     <!-- Peliosio: kuvat. Kokeile lisätä tähän col-4 col-lg-10 p-2" -->
                     <div class="row">
-                        <div class="col-4 col-lg-10 p-3">
+                        <div class="col-8 col-lg-10 p-2">
                             <div id="image-row" class="d-flex justify-content-around flex-wrap">
                                 <img src="../img/kulttuurit/Italia.png" alt="Kuva 1" class="img-fluid" data-bs-toggle="popover" data-bs-trigger="focus" title="Oikea vastaus" data-bs-content="Some content inside the popover">
                                 <img src="../img/kulttuurit/Espanja.png" alt="Kuva 2" class="img-fluid" data-bs-toggle="popover" data-bs-trigger="focus" title="Oikea vastaus" data-bs-content="Some content inside the popover">
@@ -75,7 +77,7 @@
                             </div>
                         </div>
                     <!-- Peliosio: maat. Kokeile lisätä tähän col-4 col-lg-10 p-2" -->
-                        <div class="col-4 col-lg-10 p-3">
+                        <div class="col-4 col-lg-10 p-2">
                             <div id="country-row" class="d-flex justify-content-around flex-wrap"> 
                                 <div>Ranska</div>
                                 <div>Italia</div>
@@ -85,12 +87,10 @@
                         </div>
                     </div>
                     <!-- Peliosio: buttonit.-->
-                    <div class="row">
-                        <div id="button-row" class="d-flex justify-content-around flex-wrap">
-                            <button id="reset-button" type="button" class="btn btn-primary">Tyhjennä valinnat</button>
-                            <button id="check-button" type="button" class="btn btn-primary">Tarkista</button>
-                            <button id="next-button" type="button" class="btn btn-primary" >Seuraava</button>
-                        </div>
+                    <div id="button-row" class="d-flex justify-content-around flex-wrap">
+                        <button id="reset-button" type="button" class="btn btn-primary">Tyhjennä valinnat</button>
+                        <button id="check-button" type="button" class="btn btn-primary">Tarkista</button>
+                        <button id="next-button" type="button" class="btn btn-primary" >Seuraava</button>
                     </div>
                 </div>    
             </div>

@@ -102,16 +102,20 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="end">
                 <h2>Peli päättyi!</h2>
                 <p>Sait ${score} pistettä kymmenestä mahdollisesta.</p>
-                <button id="homeBtn">Etusivulle</button> <button id="retryBtn">Uusi peli</button>
+                <div class="buttons">
+                    <button id="homeBtn">Etusivulle</button>
+                    <button id="retryBtn">Uusi peli</button>
+                </div>
             </div>
         `
-    }
+        document.getElementById("homeBtn").addEventListener('click', () => {
+        window.location.href = "../index.html"
+        })
 
-    document.getElementById("homeBtn").addEventListener('click', () => {
-        window.location.href = "./index.html"
-    })
+        document.getElementById("retryBtn").addEventListener('click', () => {
+            location.reload()
+        })
+        }
 
-    document.getElementById("retryBtn").addEventListener('click', () => {
-        initGame()
-    })
+    
 })

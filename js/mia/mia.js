@@ -99,12 +99,13 @@ document.addEventListener("DOMContentLoaded", () => {
         sessionStorage.setItem("score", score)
 
         content.innerHTML = `
-            <div class="end">
+            <div class="end d-block my-auto">
                 <h2>Peli päättyi!</h2>
                 <p>Sait ${score} pistettä kymmenestä mahdollisesta.</p>
                 <div class="buttons">
                     <button id="homeBtn">Etusivulle</button>
                     <button id="retryBtn">Uusi peli</button>
+                    <button id="nextBtn">Seuraava peli</button>
                 </div>
             </div>
         `
@@ -115,7 +116,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("retryBtn").addEventListener('click', () => {
             location.reload()
         })
-        }
 
-    
+        document.getElementById("nextBtn").addEventListener('click', () => {
+            window.location.href = "../sivut/wilma.html"
+            })
+        }
 })

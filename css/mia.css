@@ -8,7 +8,6 @@ html, body {
 
 header {
     background-color: #74a182;
-    height: 15vh;
     font-size: 30px;
     color: black;
     font-weight: bold;
@@ -58,7 +57,7 @@ aside p {
 }
 
 #content {
-    min-height: 75vh;
+    height: 75vh;
     background-color: #cde2d3;
     flex-grow: 1;
     overflow: auto;
@@ -155,11 +154,7 @@ p.footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    position: relative;
     font-size: 25px;
 }
 
@@ -182,17 +177,17 @@ p.footer {
 
 .end .buttons {
     display: flex;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
     margin-top: 10px;
 }
 
 .end button {
-    flex: 1;
-    padding: 10px 20px;
-    margin: 10px;
+    flex: none;
     background-color: #4a7c59;
     color: #cde2d3;
-    min-width: 100px;
+    width: auto;
+    margin: 0 35%;
 }
 
 @media only screen and (max-width: 500px) {

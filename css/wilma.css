@@ -1,0 +1,139 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+header {
+    background-color: #f5aa6b;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    text-align: center;
+}
+
+
+a.navbar-brand {
+    color: black;
+    font-size: 40px;
+}
+
+
+.nav-item {
+    margin: 0 15px;
+}
+
+
+ul.dropdown-menu {
+    background-color: #f8c39b;
+    font-size: 20px;
+}
+
+
+a.dropdown-item:hover {
+    background-color: #f28c38;
+}
+
+main {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    font-size: 20px;
+}
+
+#content {
+    height: 75vh;
+    background-color: #fde2d3;
+    flex-grow: 1;
+    overflow: auto;
+}
+
+.speech-bubble {
+    position: relative;
+    background: #fbf8f2;
+    border-radius: .4em;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-top-color: #fbf8f2;
+    border-bottom: 0;
+    margin-left: -7px;
+    margin-bottom: -14px;
+}
+
+footer {
+    background-color: #f5aa6b;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    height: 10vh;
+    margin-top: auto;
+    min-height: 15vh;
+}
+p.footer {
+    text-align: end;
+}
+#scoreContainer {
+    position: absolute;
+    top: 160px;
+    width: 100px;
+    right: 1200px;
+    height: 100px;
+    background-color:#f28c38 ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreDisplay {
+    font-size: 25px;
+    color: white;
+}  
+
+#answers {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    margin-top: 140px;
+}
+
+#question {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.replay-button {
+    position: absolute;
+    top: 700px;
+    right: 85px; 
+    background-color: #f28c38;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    width: 4cm;
+    height: 2cm;
+}
+.tiger {
+    padding-top: 35px;
+}
+aside {
+    text-align: center;
+}

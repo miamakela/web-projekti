@@ -64,9 +64,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Poista Bootstrap-tooltipit kaikista kuvista
     images.forEach(image => {
-        image.removeAttribute('data-bs-toggle'); // Jos käytetään Bootstrap v5+ tooltipejä
-        image.removeAttribute('title'); // Poistaa title-tekstin
-    });
+        image.removeAttribute('data-bs-toggle') // Jos käytetään Bootstrap v5+ tooltipejä
+        image.removeAttribute('title') // Poistaa title-tekstin
+    })
 
 
     // Poista kaikki popover-toiminnallisuudet alussa
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //Funktio pisteiden lisäykseen. Toimiiko?
     function addPoints(){
-       sessionStorage.setItem('game5', score.toString())
+       sessionStorage.setItem('game2', score.toString())
     }
     
     // Päivitä peli
@@ -148,9 +148,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const selectedColor = game.colors[index]
             clickedImage.style.border = `5px solid ${selectedColor}`
 
-            // Varmista, että värillä ei ole muuta käyttökohdetta
+            // Varmistetaan, että värillä ei ole muuta käyttökohdetta. Jos väri on jo käytössä, estetään valinta
             if (pairs.some(pair => pair.color === selectedColor)) {
-                return // Jos väri on jo käytössä, estetään valinta
+                return
             }
 
             pairs.push({ type: 'image', index, color: selectedColor })
@@ -169,8 +169,8 @@ document.addEventListener('DOMContentLoaded', () => {
             if (associatedImage) {
                 clickedCountry.style.border = `5px solid ${associatedImage.color}`
                 pairs.push({ type: 'country', index, color: associatedImage.color })
-                associatedImage.used = true;
-                isImageSelected = false;
+                associatedImage.used = true
+                isImageSelected = false
             }
         }
     })
@@ -190,13 +190,13 @@ document.addEventListener('DOMContentLoaded', () => {
         imageElements.forEach((img) => {
             const instance = bootstrap.Popover.getInstance(img)
             if (instance) {
-                instance.dispose() // Poista popover
+                instance.dispose()
             }
         })
     
         game.images.forEach((_, imageIndex) => {
             const imageElement = imageRow.querySelectorAll('img')[imageIndex];
-            const correctCountryIndex = correctPairs.find(pair => pair.image === imageIndex).country;
+            const correctCountryIndex = correctPairs.find(pair => pair.image === imageIndex).country
             const associatedPair = pairs.find(pair => pair.type === 'country' && pair.color === pairs.find(p => p.type === 'image' && p.index === imageIndex)?.color)
     
             if (associatedPair) {
@@ -230,14 +230,13 @@ document.addEventListener('DOMContentLoaded', () => {
         resetButton.disabled = true
     })  
 
-    // SEURAAVA-PAINIKE -> Siirry seuraavaan peliin
+    // SEURAAVA-PAINIKE -> Siirry seuraavaan peliin. Poista kaikki avoimet popoverit
     nextButton.addEventListener('click', () => {
-        // Poista kaikki avoimet popoverit
     const imageElements = imageRow.querySelectorAll('img')
     imageElements.forEach((img) => {
         const instance = bootstrap.Popover.getInstance(img)
         if (instance) {
-            instance.dispose() // Sulje ja poista popover
+            instance.dispose()
         }
     })
 

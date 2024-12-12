@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentGameIndex = 0
     let pairs = []
     let shuffledCountries = []
-    let score = 0;
+    let score = 0
     let isImageSelected = false
     let isChecked = false
 
@@ -59,9 +59,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const imageRow = document.getElementById('image-row')
     const countryRow = document.getElementById('country-row')
     const resetButton = document.getElementById('reset-button')
-
     // Valitse kaikki kuvat, joilla on tooltipejä
-    const images = document.querySelectorAll('img');
+    const images = document.querySelectorAll('img')
 
     // Poista Bootstrap-tooltipit kaikista kuvista
     images.forEach(image => {
@@ -81,6 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const countryElements = countryRow.querySelectorAll('div')
         countryElements.forEach(div => div.style.border = '') // Poista kaikki rajat maista
+    }
+
+    //Funktio pisteiden lisäykseen. Toimiiko?
+    function addPoints(){
+       sessionStorage.setItem('game5', score.toString())
     }
     
     // Päivitä peli
@@ -246,6 +250,7 @@ document.addEventListener('DOMContentLoaded', () => {
             checkButton.disabled = true
             nextButton.disabled = true
         }
+        addPoints() //Kokeilu, lisätään pisteet session storageen. Toimiiko?
     })
 
     // Käynnistä ensimmäinen peli

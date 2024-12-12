@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    background-color: #f5aa6b;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -36,13 +37,25 @@ a.dropdown-item:hover {
     background-color: #f28c38;
 }
 
+h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
 main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     font-size: 20px;
+    background-color: #fde2d3;
+}
+
+aside {
+    display: inline-block;
+    justify-items: center;
+    align-content: end;
 }
 
 #content {
-    height: 75vh;
+    min-height: 75vh;
     background-color: #fde2d3;
     flex-grow: 1;
     overflow: auto;
@@ -52,8 +65,8 @@ main {
     position: relative;
     background: #fbf8f2;
     border-radius: .4em;
-    padding: 5px;
-    margin: 5px;
+    padding: 20px;
+    margin: 20px;
 }
 
 .speech-bubble::after {
@@ -72,13 +85,14 @@ main {
 
 footer {
     background-color: #f5aa6b;
+    min-height: 15vh;
     font-size: 30px;
     color: black;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-    height: 10vh;
     margin-top: auto;
 }
+
 p.footer {
     text-align: end;
 }

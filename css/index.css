@@ -96,3 +96,58 @@ footer {
 p.footer {
     text-align: end;
 }
+
+.games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.peli1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdf7e2;
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+.peli2 {
+    display: flex;
+    flex-direction: column;
+    background-color: #94b4d0;
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+.peli3 {
+    display: flex;
+    flex-direction: column;
+    background-color: #a0c4aa;
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+.peli4 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5aa6b;
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+.peli5 {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7e5a3;
+    height: 250px;
+    width: 250px;
+    margin: 30px;
+    border-radius: 50%;
+}

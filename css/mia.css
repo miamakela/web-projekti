@@ -1,5 +1,4 @@
 html, body {
-    height: 100%;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -42,6 +41,8 @@ h2 {
 }
 
 main {
+    display: flex;
+    flex-grow: 1;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     font-size: 20px;
 }
@@ -131,7 +132,6 @@ footer {
     color: black;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-    height: 10vh;
     margin-top: auto;
 }
 
@@ -197,10 +197,15 @@ p.footer {
     .option {
         max-width: 100%;
     }
+    .end button {
+        flex: 1;
+        min-width: 100px;
+        margin: 0;
     }
 
 @media only screen and (min-width: 500px) {
     img {
         max-width: 100%;
     }
+}
 }

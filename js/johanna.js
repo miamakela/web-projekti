@@ -13,12 +13,27 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     let currentImageIndex = 0;
+    let score = 0; 
 
     const countryContainer = document.getElementById("countries"); 
     const dropArea = document.getElementById("drop-area");
     const pageNumber = document.getElementById("page-number");
+    const gameOverElement = document.getElementById("game-over");
+    const finalScore = document.getElementById("final-score");
 
     function showImage() {
+
+        if (currentImageIndex >= countries.length) {
+            const gameElement = document.getElementById("game"); 
+            const imageNumberElement = document.getElementById("image-number");
+            gameElement.style.display = "none";
+            imageNumberElement.style.display = "none";
+            gameOverElement.style.display = "block";
+            finalScore.textContent = `Sait oikein ${score}/${countries.length}. Hyvin tehty!`;
+
+            return;
+        }
+
         const countryImage = countries[currentImageIndex];
 
         dropArea.style.backgroundImage = `url(${countryImage.src})`;
@@ -69,8 +84,11 @@ document.addEventListener("DOMContentLoaded", function() {
             showImage();
         } 
         else {
-            alert("Nyt ei mennyt oikein. Yritä uudelleen.");
+            alert("Nyt ei mennyt oikein. Oikea vastaus on: " + currentCountry.correct);
         }
+
+        currentImageIndex++;
+        showImage();
     });
 
     showImage();

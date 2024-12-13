@@ -24,13 +24,13 @@ document.addEventListener("DOMContentLoaded", function() {
     function showImage() {
 
         if (currentImageIndex >= countries.length) {
+
             const gameElement = document.getElementById("game"); 
             const imageNumberElement = document.getElementById("image-number");
             gameElement.style.display = "none";
             imageNumberElement.style.display = "none";
             gameOverElement.style.display = "block";
             finalScore.textContent = `Sait oikein ${score}/${countries.length}. Hyvin tehty!`;
-
             return;
         }
 
@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
         
         options = Array.from(options);   // sort-metodi https://www.w3schools.com/js/js_array_sort.asp#mark_sort
-
         options.sort(() => Math.random() - 0.5);
 
         options.forEach(countryItem => {
@@ -79,9 +78,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (selectedCountry && selectedCountry.country === currentCountry.correct) {  //pekan materiaali
             alert("Hienosti! Valitsit oikein: " + selectedCountry.country);
+            score++;
 
-            currentImageIndex = (currentImageIndex + 1) % countries.length;
-            showImage();
         } 
         else {
             alert("Nyt ei mennyt oikein. Oikea vastaus on: " + currentCountry.correct);

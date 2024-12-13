@@ -39,7 +39,7 @@ a.dropdown-item:hover {
 
 
 #content {
-    height: 75vh;
+    min-height: 60vh;
     background-color: #f7e5a3;
     flex-grow: 1;
     overflow: auto;
@@ -50,7 +50,7 @@ footer {
     font-size: 30px;
     color: black;
     font-weight: bold;
-    height: 100vh;
+   
     margin-top: auto;
 }
 p.footer {
@@ -175,7 +175,7 @@ aside img{
     
     
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
     #game {
         flex-direction: column; 
     }

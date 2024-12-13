@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
     const countries = [
-        {src: './johannaimg/1.png', country: 'Espanja', correct: 'Espanja'},
-        {src: './johannaimg/2.png', country: 'Japani', correct: 'Japani'},
-        {src: './johannaimg/3.png', country: 'Islanti', correct: 'Islanti'},
-        {src: './johannaimg/4.png', country: 'Yhdysvallat', correct: 'Yhdysvallat'},
-        {src: './johannaimg/5.png', country: 'Australia', correct: 'Australia'},
-        {src: './johannaimg/6.png', country: 'Kiina', correct: 'Kiina'},
-        {src: './johannaimg/7.png', country: 'Arktinen alue', correct: 'Arktinen alue'},
-        {src: './johannaimg/8.png', country: 'Suomi', correct: 'Suomi'},
-        {src: './johannaimg/9.png', country: 'Sahara', correct: 'Sahara'},
-        {src: './johannaimg/10.png', country: 'Afrikka', correct: 'Afrikka'}
+        {src: '../img/johanna/1.png', country: 'Espanja', correct: 'Espanja'},
+        {src: '../img/johanna/2.png', country: 'Japani', correct: 'Japani'},
+        {src: '../img/johanna/3.png', country: 'Islanti', correct: 'Islanti'},
+        {src: '../img/johanna/4.png', country: 'Yhdysvallat', correct: 'Yhdysvallat'},
+        {src: '../img/johanna/5.png', country: 'Australia', correct: 'Australia'},
+        {src: '../img/johanna/6.png', country: 'Kiina', correct: 'Kiina'},
+        {src: '../img/johanna/7.png', country: 'Arktinen alue', correct: 'Arktinen alue'},
+        {src: '../img/johanna/8.png', country: 'Suomi', correct: 'Suomi'},
+        {src: '../img/johanna/9.png', country: 'Sahara', correct: 'Sahara'},
+        {src: '../img/johanna/10.png', country: 'Afrikka', correct: 'Afrikka'}
     ];
 
     let currentImageIndex = 0;

@@ -11,7 +11,6 @@ header {
     font-size: 30px;
     color: black;
     font-weight: bold;
-   
 }
 
 a.navbar-brand {
@@ -23,7 +22,6 @@ a.navbar-brand {
     margin: 0 15px;
 }
 
-
 ul.dropdown-menu {
     background-color: #f8c39b;
     font-size: 20px;
@@ -33,13 +31,12 @@ a.dropdown-item:hover {
     background-color: #f28c38;
 }
 
- * {
+* {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;;
  }
 
-
 #content {
-    min-height: 60vh;
+    min-height: 78vh;
     background-color: #f7e5a3;
     flex-grow: 1;
     overflow: auto;
@@ -50,7 +47,6 @@ footer {
     font-size: 30px;
     color: black;
     font-weight: bold;
-   
     margin-top: auto;
 }
 p.footer {
@@ -60,9 +56,9 @@ p.footer {
 /*oma osuus*/
 aside img{
     
-        max-width: 100%;
-        height: auto;
-        display: block;    
+    max-width: 100%;
+    height: auto;
+    display: block;    
 }
 
 .speech-bubble {
@@ -113,28 +109,19 @@ aside img{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    text-align: center;
-    
+    text-align: center; 
 }
-
 
 .drop-area { 
     max-width: 500px;  
     height: 300px;  
     background-size: cover;
-    background-position: end;
+    background-position: center;
     margin: 0;
     flex: 1;
-    margin-top: 100px;
-    
+    margin-top: 100px; 
 }
 
-.drop-image {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain; 
-    
-}
 #game-over {
     display: none;
     justify-content: center; 
@@ -172,14 +159,12 @@ aside img{
     font-size: 20px;
     font-weight: bold;
     margin-top: 70px;
-    
-    
+
 }
 @media only screen and (max-width: 1200px) {
     #game {
         flex-direction: column; 
     }
-
     .tiger, .drop-area {
         max-width: 80vw;  
         max-height: 80vh; 
@@ -188,4 +173,24 @@ aside img{
     #countries .country {
         width: 40vw; 
     }
+}
+
+@media only screen and (max-width: 768px) {
+ 
+#drop-area{
+    min-width: 400px;  
+    min-height: 300px; 
+}
+
+#countries {
+  flex-direction: row;
+}
+
+.speech-bubble {
+    max-width: 150px;
+}
+aside img {
+    max-width: 200px; 
+    height: 200px; 
+}
 }

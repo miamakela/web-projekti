@@ -1,0 +1,122 @@
+[
+    {
+        "img": "../img/mia/1.jpg",
+        "options": [
+            "Tikal",
+            "Chichén Itzá",
+            "Angkor Wat",
+            "Machu Picchu"
+        ],
+        "tip": "Tämä on Meksikon kuuluisin Maya-kaupunki",
+        "correct": "1",
+        "funFact": "Kevät- ja syyspäiväntasauksina auringonlasku luo temppeliin optisen illuusion, joka näyttää kiemurtelevan käärmeen."
+    },
+    {
+        "img": "../img/mia/2.jpg",
+        "options": [
+            "Forum Romanum",
+            "Pantheon",
+            "Akropolis",
+            "Colosseum"
+        ],
+        "tip": "Tämä muinainen amfiteatteri sijaitsee Roomassa, Italiassa",
+        "correct": "3",
+        "funFact": "Colosseumissa oli kerran valtava, avattava aurinkokatos!"
+    },
+    {
+        "img": "../img/mia/3.jpg",
+        "options": [
+            "Golden Gate -silta",
+            "Eiffel-torni",
+            "Big Ben",
+            "Empire State Building"
+        ],
+        "tip": "Tämä rautarakennelma sijaitsee Pariisissa, Ranskassa",
+        "correct": "1",
+        "funFact": "Tornin metallirakenne laajenee kuumuuden vaikutuksesta ja voi kasvaa jopa 15 senttimetriä lämpiminä päivinä."
+    },
+    {
+        "img": "../img/mia/4.jpg",
+        "options": [
+            "Teotihuacán",
+            "Gizan pyramidit",
+            "Luxorin temppeli",
+            "Petra"
+        ],
+        "tip": "Tämä faaraoiden hautapaikkanakin tunnettu nähtävyys sijaitsee Egyptissä",
+        "correct": "1",
+        "funFact": "Suurin pyramidi oli maailman korkein rakennus yli 3800 vuoden ajan!"
+    },
+    {
+        "img": "../img/mia/5.jpg",
+        "options": [
+            "Hadrianuksen valli",
+            "Kiinan muuri",
+            "Terrakotta-armeija",
+            "Angkor Thom"
+        ],
+        "tip": "Tämä monesta osasta koostuva muinainen rakennelma sijaitsee Kiinassa",
+        "correct": "1",
+        "funFact": "Vaikka usein väitetään, että muuri näkyisi avaruudesta paljain silmin, tämä on myytti – se on liian kapea, jotta sen voisi erottaa Maata kiertävältä radalta."
+    },
+    {
+        "img": "../img/mia/6.jpg",
+        "options": [
+            "Pisan kalteva torni",
+            "Big Ben",
+            "Eiffel-torni",
+            "Colosseum"
+        ],
+        "tip": "Tämä tunnettu maamerkki sijaitsee Ihmeiden aukiolla, Italiassa",
+        "correct": "0",
+        "funFact": "Tornin kallistuminen alkoi jo sen rakentamisen alkuvaiheessa, noin vuonna 1173, kun maaperä ei kestänyt raskaita rakennustöitä."
+    },
+    {
+        "img": "../img/mia/7.jpg",
+        "options": [
+            "Daavid-patsas",
+            "Moai-patsaat",
+            "Kristus-patsas",
+            "Pietarinkirkko"
+        ],
+        "tip": "Tämä ikoninen patsas seisoo korkealla vuoren huipulla, levittäen käsiään yli Rio de Janeiron kaupungin.",
+        "correct": "2",
+        "funFact": "Patsas on 30 metriä korkea ja sen käsivarret ulottuvat 28 metriin!"
+    },
+    {
+        "img": "../img/mia/8.jpg",
+        "options": [
+            "Mount Rushmore",
+            "Washington-monumentti",
+            "Golden Gate -silta",
+            "Vapaudenpatsas"
+        ],
+        "tip": "Tämä patsas seisoo Liberty Islandilla New Yorkissa ja symboloi vapautta ja toivoa",
+        "correct": "3",
+        "funFact": "Patsas oli alun perin väriltään kuparinruskea, mutta ajan myötä se on saanut vihertävän värinsä kuparin hapettumisen seurauksena."
+    },
+    {
+        "img": "../img/mia/9.jpg",
+        "options": [
+            "Guggenheim-museo",
+            "Burj Al Arab",
+            "Sydneyn oopperatalo",
+            "Vapaudenpatsas"
+        ],
+        "tip": "Tämä rakennus sijaitsee aivan sataman äärellä Australiassa",
+        "correct": "2",
+        "funFact": "Rakennuksen alkuperäinen väri oli suunniteltu olevan punertavan oranssi!"
+    },
+    {
+        "img": "../img/mia/10.jpg",
+        "options": [
+            "Pisan kalteva torni",
+            "Pietarinkirkko",
+            "Burj Khalifa",
+            "Taj Mahal"
+        ],
+        "tip": "Tämä mausoleumi sijaitsee Agrassa, Intiassa",
+        "correct": "3",
+        "funFact": "Taj Mahal rakennettiin Mughal-keisari Shah Jahanin käskystä hänen lempivaimonsa Mumtaz Mahalin muistoksi, joka kuoli synnytyksen jälkeen vuonna 1631."
+    }
+]

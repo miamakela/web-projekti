@@ -1,6 +1,5 @@
 html, body {
     height: 100%;
-    background-color: #f5aa6b;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -13,49 +12,38 @@ header {
     color: black;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    text-align: center;
 }
 
-/*home-nappulan muotoilu*/
+
 a.navbar-brand {
     color: black;
     font-size: 40px;
 }
 
-/*lisätty välistystä nav-elementtien väliin*/
+
 .nav-item {
     margin: 0 15px;
 }
 
-/*vaihdettu alasvetovalikon taustaväri ja fonttikoko*/
+
 ul.dropdown-menu {
     background-color: #f8c39b;
     font-size: 20px;
 }
 
-/*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä*/
+
 a.dropdown-item:hover {
     background-color: #f28c38;
-}
-
-h2 {
-    margin: 10px;
-    padding: 10px;
 }
 
 main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     font-size: 20px;
-    background-color: #fde2d3;
-}
-
-aside {
-    display: inline-block;
-    justify-items: center;
-    align-content: end;
 }
 
 #content {
-    min-height: 75vh;
+    height: 75vh;
     background-color: #fde2d3;
     flex-grow: 1;
     overflow: auto;
@@ -65,8 +53,9 @@ aside {
     position: relative;
     background: #fbf8f2;
     border-radius: .4em;
-    padding: 20px;
-    margin: 20px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
 }
 
 .speech-bubble::after {
@@ -85,69 +74,66 @@ aside {
 
 footer {
     background-color: #f5aa6b;
-    min-height: 15vh;
     font-size: 30px;
     color: black;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    height: 10vh;
     margin-top: auto;
+    min-height: 15vh;
 }
-
 p.footer {
     text-align: end;
 }
-
-.games {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+#scoreContainer {
+    position: absolute;
+    top: 160px;
+    width: 100px;
+    right: 1200px;
+    height: 100px;
+    background-color:#f28c38 ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.peli1 {
+#scoreDisplay {
+    font-size: 25px;
+    color: white;
+}  
+
+#answers {
     display: flex;
-    flex-direction: column;
-    background-color: #fdf7e2;
-    height: 250px;
-    width: 250px;
-    margin: 30px;
-    border-radius: 50%;
+    justify-content: center; 
+    align-items: center;
+    gap: 20px;
+    margin-top: 140px;
 }
 
-.peli2 {
-    display: flex;
-    flex-direction: column;
-    background-color: #94b4d0;
-    height: 250px;
-    width: 250px;
-    margin: 30px;
-    border-radius: 50%;
+#question {
+    text-align: center;
+    margin-top: 50px;
 }
 
-.peli3 {
-    display: flex;
-    flex-direction: column;
-    background-color: #a0c4aa;
-    height: 250px;
-    width: 250px;
-    margin: 30px;
-    border-radius: 50%;
+.replay-button {
+    position: absolute;
+    top: 700px;
+    right: 85px; 
+    background-color: #f28c38;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    width: 4cm;
+    height: 2cm;
 }
-
-.peli4 {
-    display: flex;
-    flex-direction: column;
-    background-color: #f5aa6b;
-    height: 250px;
-    width: 250px;
-    margin: 30px;
-    border-radius: 50%;
+.tiger {
+    padding-top: 35px;
 }
-
-.peli5 {
-    display: flex;
-    flex-direction: column;
-    background-color: #f7e5a3;
-    height: 250px;
-    width: 250px;
-    margin: 30px;
-    border-radius: 50%;
+aside {
+    text-align: center;
 }

@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    background-color: #74a182;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -36,30 +36,91 @@ a.dropdown-item:hover {
     background-color: #4a7c59;
 }
 
+h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
 main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
+    background-color: #74a182;
+}
+
+aside {
+    display: inline-block;
+    justify-items: center;
+    align-content: end;
+}
+
+aside p {
+    margin: 0 50px 50px 50px;
 }
 
 #content {
-    height: 75vh;
+    min-height: 70vh;
     background-color: #cde2d3;
     flex-grow: 1;
     overflow: auto;
 }
 
-img {
-    max-width: 84%;
+.speech-bubble {
+    position: relative;
+    background: #fbf8f2;
+    border-radius: .4em;
+    padding: 20px;
+    margin: 20px;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-top-color: #fbf8f2;
+    border-bottom: 0;
+    margin-left: -7px;
+    margin-bottom: -14px;
+}
+
+#imageArea {
+    position: relative;
+}
+
+#circle {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+#counter {
+    align-content: center;
+    text-align: center;
+    background: #fbf8f2;
+    border: solid black 1px;
+    border-radius: 50%;
+    width: 7rem;
+    height: 7rem;
+}
+
+.imgBeforeGuess {
+    filter: blur(7px) hue-rotate(300deg) contrast(150%) brightness(60%) grayscale(50%);
+}
+
+.options {
+    list-style: none;
 }
 
 .option {
-    margin: 3vh;
-    border-radius: 10%;
-}
-
-button {
-    width: 90%;
-    height: 6vh;
+    list-style: none;
+    margin-left: -10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: auto;
     color: #cde2d3;
     border: 2px solid black;
     background-color: #4a7c59;
@@ -71,9 +132,84 @@ footer {
     color: black;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-    height: 10vh;
     margin-top: auto;
 }
+
 p.footer {
     text-align: end;
+}
+
+.correct {
+    background-color: greenyellow;
+    color: black;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 25px;
+}
+
+#answerArea {
+    position: relative;
+}
+
+#answerArea p {
+    margin: 30px;
+    justify-content: center;
+    text-align: left;
+}
+
+#nextQuestionBtn {
+    background-color: #4a7c59;
+    color: #cde2d3;
+    position: absolute; 
+    right: 30px;
+}
+
+.end .buttons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.end button {
+    flex: 1;
+    padding: 10px 20px;
+    margin: 10px;
+    flex: none;
+    background-color: #4a7c59;
+    color: #cde2d3;
+    min-width: 100px;
+    width: auto;
+}
+
+@media only screen and (max-width: 990px) {
+    img {
+        width: 100%;    
+    }
+    .option {
+        max-width: 100%;
+    }
+    }
+
+@media only screen and (min-width: 500px) {
+    img {
+        max-width: 100%;
+    }
 }

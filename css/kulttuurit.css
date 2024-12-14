@@ -66,12 +66,8 @@ main {
     margin-bottom: -14px;
 }
 
-.image-container {
-    display: flex-end;
-}
-
 #content {
-    height: 75vh;
+    height: 80vh;
     background-color: #c9d9e7;
     flex-grow: 1;
     overflow: auto;
@@ -150,8 +146,6 @@ p.footer {
 /* Mobiilinäkymässä kuva on pienempi */
 @media (max-width: 1025px) {
     .image-container img {
-        width: 80%; /* Kuva vie 80% kontistaan */
         max-width: 200px; /* Kuva ei mene suuremmaksi kuin 200px */
-        margin: 0 auto; /* Keskittää kuvan */
     }
 }

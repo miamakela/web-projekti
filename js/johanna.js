@@ -1,15 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
     const countries = [
-        {src: '../img/johanna/1.png', country: 'Espanja', correct: 'Espanja'},
-        {src: '../img/johanna/2.png', country: 'Japani', correct: 'Japani'},
-        {src: '../img/johanna/3.png', country: 'Islanti', correct: 'Islanti'},
-        {src: '../img/johanna/4.png', country: 'Yhdysvallat', correct: 'Yhdysvallat'},
-        {src: '../img/johanna/5.png', country: 'Australia', correct: 'Australia'},
-        {src: '../img/johanna/6.png', country: 'Kiina', correct: 'Kiina'},
-        {src: '../img/johanna/7.png', country: 'Arktinen alue', correct: 'Arktinen alue'},
-        {src: '../img/johanna/8.png', country: 'Suomi', correct: 'Suomi'},
-        {src: '../img/johanna/9.png', country: 'Sahara', correct: 'Sahara'},
-        {src: '../img/johanna/10.png', country: 'Afrikka', correct: 'Afrikka'}
+        {src: '../img/johanna/1.png', country: 'Espanja', correct: 'Espanja', hint: 'Suosittu lomakohde ja tunnettu tapaksesta.'},
+        {src: '../img/johanna/2.png', country: 'Japani', correct: 'Japani', hint: 'Tunnettu kirsikankukista ja sushista.'},
+        {src: '../img/johanna/3.png', country: 'Islanti', correct: 'Islanti', hint: 'Tyypillinen piirre on geoterminen lämpö ja tunnettu kuumista lähteistä.'},
+        {src: '../img/johanna/4.png', country: 'Yhdysvallat', correct: 'Yhdysvallat', hint: 'Täällä on tunnettuja nähtävyyksiä kuten tämä Grand Canyon tai esimerkiksi Vapaudenpatsas'},
+        {src: '../img/johanna/5.png', country: 'Australia', correct: 'Australia', hint: 'Upeita hiekkarantoja ja hyvät surffailu mahdollisuudet.'},
+        {src: '../img/johanna/6.png', country: 'Kiina', correct: 'Kiina', hint: 'Tunnettu lohikäärmesymnboleista ja keisareista.'},
+        {src: '../img/johanna/7.png', country: 'Arktinen alue', correct: 'Arktinen alue', hint: 'Tunnettu äärimmäisestä kylmyydestä ja siellä sijaitsee pohjoisnapa.'},
+        {src: '../img/johanna/8.png', country: 'Suomi', correct: 'Suomi', hint: 'Täällä tiedetään joulupukin asuvan.'},
+        {src: '../img/johanna/9.png', country: 'Sahara', correct: 'Sahara', hint: 'Maailman suurin kuuma aavikko, jossa kameli on tärkeä kulkuväline.'},
+        {src: '../img/johanna/10.png', country: 'Afrikka', correct: 'Afrikka', hint: 'Tämä maanosa on koti monille tunnetuille eläimille, kuten kuvassa oleville.'}
     ];
 
     let currentImageIndex = 0;
@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
             imageNumberElement.style.display = "none";
             gameOverElement.style.display = "block";
             finalScore.textContent = `Sait oikein ${score}/${countries.length}. Hyvin tehty!`;
+            hintContainer.style.display = "none";
             return;
         }
 
@@ -80,6 +81,9 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Hienosti! Valitsit oikein: " + selectedCountry.country);
             score++;
 
+            const hintContainer = document.getElementById("hint");
+            hintContainer.style.display = "none";
+
         } 
         else {
             alert("Nyt ei mennyt oikein. Oikea vastaus on: " + currentCountry.correct);
@@ -87,6 +91,16 @@ document.addEventListener("DOMContentLoaded", function() {
 
         currentImageIndex++;
         showImage();
+    });
+
+    const hintButton = document.getElementById("hint-button");
+    const hintText = document.getElementById("hint-text");
+    const hintContainer = document.getElementById("hint");
+
+    hintButton.addEventListener("click", function() {
+        const currentCountry = countries[currentImageIndex];
+        hintText.textContent = currentCountry.hint;  // Asetetaan vihje
+        hintContainer.style.display = "block";  // Näytetään vihje
     });
 
     showImage();

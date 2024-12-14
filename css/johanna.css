@@ -7,7 +7,7 @@ html, body {
 }
 
 header {
-    background-color: #f5aa6b;
+    background-color: #f3d77d;
     font-size: 30px;
     color: black;
     font-weight: bold;
@@ -37,13 +37,13 @@ a.dropdown-item:hover {
 
 #content {
     min-height: 78vh;
-    background-color: #f7e5a3;
+    background-color: #fbf1c6;
     flex-grow: 1;
     overflow: auto;
 }
 
 footer {
-    background-color: #f5aa6b;
+    background-color: #f3d77d;
     font-size: 30px;
     color: black;
     font-weight: bold;
@@ -153,6 +153,19 @@ aside img{
 .country:hover {
     background-color:  #2fdc77
   }
+
+  #hint {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px; 
+    margin-bottom: 20px;
+}
+#hint-button {
+    background-color: #2fdc77;
+    border: 2px solid #2fdc77;
+}
   
 #image-number {
     text-align: center;

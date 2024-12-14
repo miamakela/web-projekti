@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gameRoundElement.textContent = `Peli ${currentGameIndex + 1}/3`
 
         // Päivittää palautteen
-        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä. Kun olet yhdistäyt kaikki kuvat ja maat, paina "tarkista"-näppäintä. Tämän jälkeen näet oikeat vastaukset. Oikeat vastaukset tunnistat vihreästä väristä ja väärät punaisesta. Klikkaamalla kuvia saat lisätietoa maista.'
+        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä. Kun olet yhdistäyt kaikki kuvat ja maat, paina "tarkista" -nappia. Tämän jälkeen näet oikeat vastaukset. Oikeat vastaukset tunnistat vihreästä väristä ja väärät punaisesta. Klikkaamalla kuvia saat lisätietoa maista.'
     }
 
     // TYHJENNÄ VALINNAT -painike
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pairs = []
         isImageSelected = false
 
-        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä. Kun olet yhdistäyt kaikki kuvat ja maat, paina "tarkista"-näppäintä. Tämän jälkeen näet oikeat vastaukset. Oikeat vastaukset tunnistat vihreästä väristä ja väärät punaisesta. Klikkaamalla kuvia saat lisätietoa maista.'
+        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä. Kun olet yhdistäyt kaikki kuvat ja maat, paina "tarkista" -nappia. Tämän jälkeen näet oikeat vastaukset. Oikeat vastaukset tunnistat vihreästä väristä ja väärät punaisesta. Klikkaamalla kuvia saat lisätietoa maista.'
         checkButton.disabled = false
         nextButton.disabled = true
     })
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     
         score += correctCount;
-        feedbackElement.textContent = `Sait oikein ${correctCount}/${game.countries.length}! Klikkaa kuvaa nähdäksesi oikea vastaus ja oppiaksesi lisää maan kulttuurista!`
+        feedbackElement.textContent = `Sait oikein ${correctCount}/${game.countries.length}! Klikkaa kuvaa nähdäksesi oikea vastaus ja oppiaksesi lisää maan kulttuurista. Paina "Seuraava" -nappia jatkaaksesi seuraavaan peliin.`
 
         isChecked = true
         checkButton.disabled = true

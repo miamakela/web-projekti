@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
             countries: ['Italia', 'Espanja', 'Ranska', 'Saksa'],
             colors: ['magenta', 'yellow', 'blue', 'orange'],
             popoverTexts: [
-                'Italia! Italialainen kulttuuri on tunnettu historiastaan, taiteestaan, ruoastaan ja juhlaperinteistään. Ruoka on olennainen osa italialaista elämäntapaa, ja italialaisilla aterioilla nautitaan usein pizzaa, pastaa, risottoa ja herkullisia jälkiruokia kuten tiramisua, gelatoa ja cannoleja. Juomista suositaan espressoa, joka on vahva kahvi, sekä viiniä.',
+                'Oikea vastaus on Italia! Italialainen kulttuuri on tunnettu historiastaan, taiteestaan, ruoastaan ja juhlaperinteistään. Italialaisilla aterioilla nautitaan usein pizzaa, pastaa, risottoa ja herkullisia jälkiruokia kuten tiramisua, gelatoa ja cannoleja. Juomista suositaan espressoa sekä viiniä.',
 
-                'Espanja! Espanjalainen kulttuuri on värikäs ja rikas, täynnä historiaa, taidetta ja perinteitä. Se tunnetaan flamenco-tanssista, härkätaisteluista ja juhlaperinteistä, kuten La Tomatinasta ja Feria de Abrilista. Ruoka on tärkeä osa kulttuuria, ja tunnettuja ruokia ovat paella, tapas ja churrot suklaakastikkeen kanssa. Espanja on myös viininviljelyn suurmaa. Musiikki, tanssi ja yhteisöllisyys ovat espanjalaisen elämäntavan ytimessä.',
+                'Oikea vastaus on Espanja! Espanjalainen kulttuuri on värikäs ja rikas, täynnä historiaa, taidetta ja perinteitä. Se tunnetaan flamenco-tanssista, härkätaisteluista ja juhlaperinteistä, kuten La Tomatinasta ja Feria de Abrilista. Tunnettuja ruokia ovat paella, tapas ja churrot. Espanja on myös viininviljelyn suurmaa. Musiikki, tanssi ja yhteisöllisyys ovat espanjalaisen elämäntavan ytimessä.',
 
-                'Ranska! Ranskan kulttuuri on tunnettu eleganssistaan, taiteestaan ja historiastaan. Ranska on muodin, kulinaaristen herkkujen ja viininviljelyn keskus. Tunnettuja ruokia ovat patonki, croissant, juustot ja ratatouille, ja viinejä, kuten Bordeaux ja Champagne, arvostetaan ympäri maailmaa. Ranska on myös kuuluisa monumenteistaan, kuten Eiffel-torni ja Versailles, sekä taiteilijoistaan ja kirjailijoistaan. Juhlat ja perinteet, kuten Bastiljin päivä, yhdistävät ihmisiä.',
+                'Oikea vastaus on Ranska! Ranskan kulttuuri on tunnettu eleganssistaan, taiteestaan ja historiastaan. Ranska on muodin, kulinaaristen herkkujen ja viininviljelyn keskus. Tunnettuja ruokia ovat patonki, croissant, juustot ja ratatouille, ja viinejä, kuten Bordeaux ja Champagne, arvostetaan ympäri maailmaa. Ranska on myös kuuluisa monumenteistaan, kuten Eiffel-torni ja Versailles, sekä taiteilijoistaan ja kirjailijoistaan.',
 
-                'Saksa! Saksan kulttuuri on rikas ja monipuolinen, tunnettu historiastaan, tieteestään ja perinteistään. Se yhdistetään kuuluisaan musiikkiin, kuten Beethovenin ja Bachin teoksiin, sekä kirjallisuuteen ja filosofiaan. Saksassa juhlitaan perinteisiä tapahtumia, kuten Oktoberfestia, jossa korostuvat olutkulttuuri ja paikalliset ruoat, kuten pretzelit, bratwurst ja hapankaali. Arkkitehtuuri vaihtelee keskiaikaisista linnoista moderneihin kaupunkirakennuksiin, ja joulumarkkinat ovat suosittu osa talvikulttuuria.'
+                'Oikea vastaus on Saksa! Saksa on tunnettu historiastaan, tieteestään ja perinteistään. Se yhdistetään kuuluisaan musiikkiin, kuten Beethovenin ja Bachin teoksiin, sekä kirjallisuuteen ja filosofiaan. Saksassa juhlitaan perinteisiä tapahtumia, kuten Oktoberfestia, jossa korostuvat olutkulttuuri ja paikalliset ruoat, kuten pretzelit, bratwurst ja hapankaali. Arkkitehtuuri vaihtelee keskiaikaisista linnoista moderneihin kaupunkirakennuksiin, ja joulumarkkinat ovat suosittu osa talvikulttuuria.'
             ]
         },
         {
@@ -19,13 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
             countries: ['Yhdysvallat', 'Meksiko', 'Australia', 'Brasilia'],
             colors: ['purple', 'orange', 'lime', 'pink'],
             popoverTexts: [
-                'Yhdysvallat! Yhdysvaltain kulttuuri on monimuotoinen ja sekoitus eri maiden vaikutteita, sillä maa on muodostunut monista maahanmuuttajien ryhmistä. Se tunnetaan popkulttuuristaan, kuten Hollywood-elokuvista, musiikkityyleistä kuten jazz, rock ja hip-hop, sekä urheilulajeista, kuten amerikkalaisesta jalkapallosta ja baseballista. Ruokakulttuuriin kuuluvat hampurilaiset, hot dogit ja barbecue, mutta myös monien kansainvälisten keittiöiden vaikutteet. Yhdysvalloissa arvostetaan yksilönvapautta, innovaatioita ja yhteisöllisiä juhlia, kuten Kiitospäivää ja itsenäisyyspäivää.',
+                'Oikea vastaus on Yhdysvallat! Yhdysvaltain kulttuuri on monimuotoinen ja sekoitus eri maiden vaikutteita, sillä maa on muodostunut monista maahanmuuttajien ryhmistä. Se tunnetaan popkulttuuristaan, kuten Hollywood-elokuvista, musiikkityyleistä kuten jazz, rock ja hip-hop, sekä urheilulajeista, kuten amerikkalaisesta jalkapallosta ja baseballista. Ruokakulttuuriin kuuluvat hampurilaiset, hot dogit ja barbecue, mutta myös monien kansainvälisten keittiöiden vaikutteet. Yhdysvalloissa arvostetaan yksilönvapautta, innovaatioita ja yhteisöllisiä juhlia, kuten Kiitospäivää ja itsenäisyyspäivää.',
 
-                'Meksiko! Meksikon kulttuuri on värikäs ja täynnä perinteitä, yhdistäen alkuperäiskansojen ja espanjalaisten vaikutteita. Se tunnetaan mariachi-musiikista, värikkäistä juhlista, kuten Día de los Muertos (Kuolleiden päivä), ja perinteisistä tansseista. Ruokakulttuuri on keskeinen osa elämää, ja suosittuja ruokia ovat taco, enchilada, guacamole ja tamale. Juomista tunnetaan erityisesti tequila ja horchata. Meksikossa arkkitehtuuri vaihtelee muinaisista mayojen ja atsteekkien temppeleistä siirtomaa-ajan rakennuksiin. Yhteisöllisyys ja perhe ovat kulttuurin ytimessä.',
+                'Oikea vastaus on Meksiko! Meksikon kulttuuri on värikäs ja täynnä perinteitä, yhdistäen alkuperäiskansojen ja espanjalaisten vaikutteita. Se tunnetaan mariachi-musiikista, värikkäistä juhlista, kuten Día de los Muertos, ja perinteisistä tansseista. Suosittuja ruokia ovat taco, enchilada, guacamole ja tamale. Juomista tunnetaan erityisesti tequila ja horchata. Meksikossa arkkitehtuuri vaihtelee muinaisista mayojen ja atsteekkien temppeleistä siirtomaa-ajan rakennuksiin. Yhteisöllisyys ja perhe ovat kulttuurin ytimessä.',
 
-                'Australia! Australian kulttuuri on monimuotoinen, yhdistäen alkuperäiskansojen, aboriginaalien, rikkaan perinnön ja maahanmuuton tuomat vaikutteet. Aboriginaalien taide, kuten maalaus ja didgeridoo-musiikki, on tärkeä osa maan historiaa. Australialaiset arvostavat ulkoilmaelämää, urheilua, kuten krikettiä ja australialaista jalkapalloa, sekä rentoa elämäntyyliä. Ruokakulttuurissa korostuvat grilliruoat, kuten "barbie", tuoreet merenelävät ja lamingtonit jälkiruokana. Yhteisöllisyys ja luonnon kunnioitus ovat keskeisiä piirteitä kulttuurissa.',
+                'Oikea vastaus on Australia! Australian kulttuuri on monimuotoinen, yhdistäen alkuperäiskansojen, aboriginaalien, rikkaan perinnön ja maahanmuuton tuomat vaikutteet. Aboriginaalien taide, kuten maalaus ja didgeridoo-musiikki, on tärkeä osa maan historiaa. Australialaiset arvostavat ulkoilmaelämää, urheilua, kuten krikettiä ja australialaista jalkapalloa, sekä rentoa elämäntyyliä. Ruokakulttuurissa korostuvat grilliruoat, kuten "barbie", tuoreet merenelävät ja lamingtonit jälkiruokana. Yhteisöllisyys ja luonnon kunnioitus ovat keskeisiä piirteitä kulttuurissa.',
 
-                'Brasilia! Brasilian kulttuuri on monimuotoinen ja rikas, yhdistäen alkuperäiskansojen, afrikkalaisten ja eurooppalaisten vaikutteita. Maa tunnetaan värikkäästä sambasta, karnevaaleista ja jalkapallosta, joka on brasilialaisten intohimo. Ruokakulttuuriin kuuluvat feijoada (pataruoka), pão de queijo (juustoleipä) ja tuoreet trooppiset hedelmät. Juomista suosittuja ovat caipirinha ja guaraná. Luonto ja yhteisöllisyys ovat tärkeä osa brasilialaista elämäntapaa, ja juhlat sekä musiikki ovat keskeisessä roolissa arjessa.',
+                'Oikea vastaus on Brasilia! Brasilian kulttuuri on monimuotoinen ja rikas, yhdistäen alkuperäiskansojen, afrikkalaisten ja eurooppalaisten vaikutteita. Maa tunnetaan värikkäästä sambasta, karnevaaleista ja jalkapallosta, joka on brasilialaisten intohimo. Ruokakulttuuriin kuuluvat feijoada (pataruoka), pão de queijo (juustoleipä) ja tuoreet trooppiset hedelmät. Juomista suosittuja ovat caipirinha ja guaraná. Luonto ja yhteisöllisyys ovat tärkeä osa brasilialaista elämäntapaa, ja juhlat sekä musiikki ovat keskeisessä roolissa arjessa.',
             ]
         },
         {
@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
             countries: ['Kiina', 'Intia', 'Egypti', 'Etelä-Afrikka'],
             colors: ['brown', 'cyan', 'magenta', 'lime'],
             popoverTexts: [
-                'Kiina! Kiinan kulttuuri on yksi maailman vanhimmista ja monimuotoisimmista, juontuen yli 5000 vuoden takaa. Se tunnetaan perinteisistä arvoistaan, kuten perhesiteistä, kunnioituksesta vanhempia kohtaan ja henkisyydestä. Kiinassa on rikas taideperinne, johon kuuluu maalausta, kalligrafiaa ja teatteria, kuten Peking-ooppera. Kiinalainen keittiö on monipuolinen ja mausteinen, ja tunnetuimpia ruokia ovat dim sum, pekonisiat, dumplingit ja riisiruokia. Kiinalainen uusi vuosi ja muut juhlapäivät, kuten Lantern-festivaali, ovat tärkeitä kulttuuriin kuuluvia tapahtumia.',
+                'Oikea vastaus on Kiina! Kiinan kulttuuri on yksi maailman vanhimmista ja monimuotoisimmista, juontuen yli 5000 vuoden takaa. Se tunnetaan perinteisistä arvoistaan, kuten perhesiteistä, kunnioituksesta vanhempia kohtaan ja henkisyydestä. Kiinassa on rikas taideperinne, johon kuuluu maalausta, kalligrafiaa ja teatteria, kuten Peking-ooppera. Kiinalainen keittiö on monipuolinen ja mausteinen, ja tunnetuimpia ruokia ovat dim sum, pekonisiat, dumplingit ja riisiruokia. Kiinalainen uusi vuosi ja muut juhlapäivät, kuten Lantern-festivaali, ovat tärkeitä kulttuuriin kuuluvia tapahtumia.',
 
-                'Intia! Intia on tunnettu värikkäistä perinteistään, juhlistaan ja henkisyydestään. Maa on koti jooga- ja meditaatioperinteille sekä monille uskonnollisille juhlapäiville, kuten Diwali ja Holi. Intialainen keittiö on mausteinen ja monipuolinen, suosittuja ruokia ovat curry, biryani, naan-leipä ja dosa. Juomista tunnetaan erityisesti chai (maustettu tee) ja lassi (jogurttijuoma). Taide, musiikki ja tanssit, kuten Bollywood-elokuvat, klassinen Bharatanatyam-tanssi ja hindulainen temppeliarkkitehtuuri, ovat tärkeä osa kulttuuria. Perhe ja yhteisöllisyys ovat kulttuurin ytimessä.',
+                'Oikea vastaus on Intia! Intia on tunnettu värikkäistä perinteistään, juhlistaan ja henkisyydestään. Maa on koti jooga- ja meditaatioperinteille sekä monille uskonnollisille juhlapäiville, kuten Diwali ja Holi. Intialainen keittiö on mausteinen ja monipuolinen, suosittuja ruokia ovat curry, biryani, naan-leipä ja dosa. Juomista tunnetaan erityisesti chai ja lassi. Taide, musiikki ja tanssit, kuten Bollywood-elokuvat, klassinen Bharatanatyam-tanssi ja hindulainen temppeliarkkitehtuuri, ovat tärkeä osa kulttuuria.',
 
-                'Egypti! Egyptin kulttuuri on rikas ja historiallinen, juontuen muinaisen Egyptin ajoista. Maa tunnetaan pyramideistaan, sfinksistä ja Niilin merkityksestä. Perinteisiin kuuluu taide, kuten arabeskit ja kalligrafia, sekä musiikki ja tanssi, kuten perinteinen tanssi raqs sharqi. Egyptiläinen keittiö tarjoaa ruokia, kuten ful medames (pavut), koshari (riisi ja linssit) ja ta’amiyya (egyptiläinen falafel). Juomista suosittuja ovat karkade (hibiskustee) ja minttutee. Perhe ja uskonto ovat keskeisiä kulttuurissa, ja islamin ja kristinuskon vaikutukset näkyvät arjessa ja juhlapäivissä.',
+                'Oikea vastaus on Egypti! Egyptin kulttuuri on rikas ja historiallinen, juontuen muinaisen Egyptin ajoista. Maa tunnetaan pyramideistaan, sfinksistä ja Niilin merkityksestä. Perinteisiin kuuluu taide, kuten arabeskit ja kalligrafia, sekä musiikki ja tanssi, kuten perinteinen tanssi raqs sharqi. Egyptiläinen keittiö tarjoaa ruokia, kuten ful medames, koshari ja ta’amiyya. Juomista suosittuja ovat karkade (hibiskustee) ja minttutee. Perhe ja uskonto ovat keskeisiä kulttuurissa, ja islamin ja kristinuskon vaikutukset näkyvät arjessa ja juhlapäivissä.',
 
-                'Etelä-Afrikka! Etelä-Afrikan kulttuuri on monimuotoinen ja monikulttuurinen, sillä maassa asuu useita etnisiä ryhmiä, kuten zuluja, xhosa ja afrikanereita. Maan historiaan kuuluu apartheid, mutta tänä päivänä Etelä-Afrikka on tunnettu sen monikielisyydestä ja kansan yhtenäisyydestä. Taide, kuten musiikki (esim. jazz ja mbaqanga) ja tanssi, ovat tärkeä osa kulttuuria. Ruokakulttuuriin kuuluvat ruokalajit, kuten biltong (kuivattu liha), bobotie (liha- ja munakastike) ja braai (grilliruoka). Etelä-Afrikka on myös tunnettu luonnonkauniista maisemista ja villieläimistä, joita juhlistetaan safareilla ja luonnonpuistoissa.',
+                'Oikea vastaus on Etelä-Afrikka! Etelä-Afrikan kulttuuri on monimuotoinen ja monikulttuurinen, sillä maassa asuu useita etnisiä ryhmiä, kuten zuluja, xhosa ja afrikanereita. Maan historiaan kuuluu apartheid, mutta tänä päivänä Etelä-Afrikka on tunnettu sen monikielisyydestä ja kansan yhtenäisyydestä. Musiikki (esim. jazz ja mbaqanga) ja tanssi, ovat tärkeä osa kulttuuria. Ruokakulttuuriin kuuluvat ruokalajit, kuten biltong, bobotie ja braai. Etelä-Afrikka on myös tunnettu luonnonkauniista maisemista ja villieläimistä, joita voi nähdä safareilla ja luonnonpuistoissa.',
             ]  
         }
     ]
@@ -74,12 +74,13 @@ document.addEventListener('DOMContentLoaded', () => {
     el.removeAttribute('data-bs-toggle')
     })
     
+    //Poistaa kaikki rajat kuvista ja maista
     function resetBorders() {
         const imageElements = imageRow.querySelectorAll('img')
-        imageElements.forEach(img => img.style.border = '') // Poista kaikki rajat kuvista
+        imageElements.forEach(img => img.style.border = '')
 
         const countryElements = countryRow.querySelectorAll('div')
-        countryElements.forEach(div => div.style.border = '') // Poista kaikki rajat maista
+        countryElements.forEach(div => div.style.border = '')
     }
 
     //Funktio pisteiden lisäykseen. Toimiiko?
@@ -87,20 +88,20 @@ document.addEventListener('DOMContentLoaded', () => {
        sessionStorage.setItem('game2', score.toString())
     }
     
-    // Päivitä peli
+    // Päivittää pelin
     function updateGame() {
         const game = games[currentGameIndex]
 
         resetBorders()
 
-        // Päivitä kuvat
+        // Päivittää kuvat
         const imageElements = imageRow.querySelectorAll('img')
         game.images.forEach((src, index) => {
             const img = imageElements[index]
             img.src = src
         });
 
-        // Sekoita maat ja päivitä taulukko
+        // Sekoittaa maat ja päivittää taulukon
         shuffledCountries = game.countries.slice().sort(() => Math.random() - 0.5)
         const countryElements = countryRow.querySelectorAll('div')
         shuffledCountries.forEach((name, index) => {
@@ -115,14 +116,14 @@ document.addEventListener('DOMContentLoaded', () => {
         nextButton.disabled = true
         resetButton.disabled = false
 
-        // Päivitä kierrosteksti
+        // Päivittää kierrostekstin
         gameRoundElement.textContent = `Peli ${currentGameIndex + 1}/3`
 
-        // Päivitä palaute
+        // Päivittää palautteen
         feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä. Kun olet yhdistäyt kaikki kuvat ja maat, paina "tarkista"-näppäintä. Tämän jälkeen näet oikeat vastaukset. Oikeat vastaukset tunnistat vihreästä väristä ja väärät punaisesta. Klikkaamalla kuvia saat lisätietoa maista.'
     }
 
-    // Tyhjennä valinnat
+    // TYHJENNÄ VALINNAT -painike
     resetButton.addEventListener('click', () => {
         const imageElements = imageRow.querySelectorAll('img')
         imageElements.forEach(img => img.style.border = '')
@@ -138,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nextButton.disabled = true
     })
 
-    // Käsittele kuvan valinta
+    // Käsittelee kuvan valintaa
     imageRow.addEventListener('click', (event) => {
         if (isChecked || isImageSelected) return
         const clickedImage = event.target
@@ -158,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    // Käsittele maan valinta
+    // Käsittelee maan valintaa
     countryRow.addEventListener('click', (event) => {
         if (isChecked || !isImageSelected) return
         const clickedCountry = event.target
@@ -175,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     })
 
-    // Käsittele tarkistuspainikkeen toiminta
+    // Käsittelee tarkistuspainikkeen toimintaa
     checkButton.addEventListener('click', () => {
         const game = games[currentGameIndex]
         const correctPairs = game.images.map((image, i) => ({
@@ -185,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         let correctCount = 0
 
-        // Poista vanhat popoverit
+        // Poistaa vanhat popoverit
         const imageElements = imageRow.querySelectorAll('img')
         imageElements.forEach((img) => {
             const instance = bootstrap.Popover.getInstance(img)
@@ -212,12 +213,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     countryElement.style.border = `5px solid red`
                 }
             }
-            // Luo popover tarkistuksen jälkeen
+            // Luo popoverin tarkistuksen jälkeen
             const popover = new bootstrap.Popover(imageElement, {
                 content: game.popoverTexts[imageIndex],
                 trigger: 'click',
                 placement: 'right',
-                fallbackPlacements: ['bottom'] // Varmista selkeä asettelu
+                fallbackPlacements: ['left']
             })
         })
     
@@ -230,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resetButton.disabled = true
     })  
 
-    // SEURAAVA-PAINIKE -> Siirry seuraavaan peliin. Poista kaikki avoimet popoverit
+    // SEURAAVA-PAINIKE -> Siirry seuraavaan peliin. Poistaa kaikkii avoimet popoverit
     nextButton.addEventListener('click', () => {
     const imageElements = imageRow.querySelectorAll('img')
     imageElements.forEach((img) => {
@@ -252,6 +253,6 @@ document.addEventListener('DOMContentLoaded', () => {
         addPoints() //Kokeilu, lisätään pisteet session storageen. Toimiiko?
     })
 
-    // Käynnistä ensimmäinen peli
+    // Käynnistää ensimmäisen pelin
     updateGame()
 })

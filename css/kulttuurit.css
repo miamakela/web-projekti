@@ -125,22 +125,20 @@ main {
 }
 
 .popover {
-    max-width: 300px; /* Määritetään maksimileveys */
-    width: 170px;     /* Määritetään kiinteä leveys */
-    height: 100px;    /* Määritetään korkeus */
+    width: 270px;     /* Määritetään kiinteä leveys */
 }
 
-.popover-header {
+/*.popover-header {
     background-color: #3a6da1 !important;
     color: #ffffff !important;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-}
+}*/
 
 .popover-body {
     background-color: #94b4d0 !important;
-    color: #ffffff !important;
-    font-size: 13px;
+    color: #f3f9ff !important;
+    font-size: 17px;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     border: 2px solid #3a6da1;
 }
@@ -166,5 +164,13 @@ p.footer {
 
     #image-row img {
         max-width: 150px;
+    }
+
+    .popover {
+        width: 45%;     /* Määritetään kiinteä leveys */
+    }
+
+    .popover-body {
+        font-size: 13px;
     }
 }

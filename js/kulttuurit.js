@@ -59,22 +59,20 @@ document.addEventListener('DOMContentLoaded', () => {
     const imageRow = document.getElementById('image-row')
     const countryRow = document.getElementById('country-row')
     const resetButton = document.getElementById('reset-button')
-    // Valitse kaikki kuvat, joilla on tooltipejä
+    
+    // Poistaa tooltipit kaikista kuvista. Poista kaikki popover-toiminnallisuudet alussa.
     const images = document.querySelectorAll('img')
 
-    // Poista Bootstrap-tooltipit kaikista kuvista
     images.forEach(image => {
-        image.removeAttribute('data-bs-toggle') // Jos käytetään Bootstrap v5+ tooltipejä
-        image.removeAttribute('title') // Poistaa title-tekstin
+        image.removeAttribute('data-bs-toggle')
+        image.removeAttribute('title')
     })
 
-
-    // Poista kaikki popover-toiminnallisuudet alussa
     document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => {
-    el.removeAttribute('data-bs-toggle')
+        el.removeAttribute('data-bs-toggle')
     })
     
-    //Poistaa kaikki rajat kuvista ja maista
+    // Funktio rajojen positamiseen kuvista ja maista.
     function resetBorders() {
         const imageElements = imageRow.querySelectorAll('img')
         imageElements.forEach(img => img.style.border = '')
@@ -83,12 +81,12 @@ document.addEventListener('DOMContentLoaded', () => {
         countryElements.forEach(div => div.style.border = '')
     }
 
-    //Funktio pisteiden lisäykseen. Toimiiko?
+    // Funktio pisteiden lisäykseen. Toimiiko?
     function addPoints(){
        sessionStorage.setItem('game2', score.toString())
     }
     
-    // Päivittää pelin
+    // Funktio pelin päivitykseen
     function updateGame() {
         const game = games[currentGameIndex]
 
@@ -99,14 +97,14 @@ document.addEventListener('DOMContentLoaded', () => {
         game.images.forEach((src, index) => {
             const img = imageElements[index]
             img.src = src
-        });
+        })
 
         // Sekoittaa maat ja päivittää taulukon
         shuffledCountries = game.countries.slice().sort(() => Math.random() - 0.5)
         const countryElements = countryRow.querySelectorAll('div')
         shuffledCountries.forEach((name, index) => {
             countryElements[index].textContent = name
-        });
+        })
 
         // Nollaa valinnat
         pairs = []
@@ -116,12 +114,47 @@ document.addEventListener('DOMContentLoaded', () => {
         nextButton.disabled = true
         resetButton.disabled = false
 
-        // Päivittää kierrostekstin
+        // Päivittää kierrostiedot ja puhekuplan
         gameRoundElement.textContent = `Peli ${currentGameIndex + 1}/3`
-
-        // Päivittää palautteen
         feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä. Kun olet yhdistäyt kaikki kuvat ja maat, paina "tarkista" -nappia. Tämän jälkeen näet oikeat vastaukset. Oikeat vastaukset tunnistat vihreästä väristä ja väärät punaisesta. Klikkaamalla kuvia saat lisätietoa maista.'
     }
+
+
+    // Käsittelee kuvan valintaa
+    imageRow.addEventListener('click', (event) => {
+        if (isChecked || isImageSelected) return
+        const clickedImage = event.target
+        if (clickedImage.tagName === 'IMG') {
+            const game = games[currentGameIndex]
+            const index = Array.from(imageRow.querySelectorAll('img')).indexOf(clickedImage)
+            const selectedColor = game.colors[index]
+            clickedImage.style.border = `5px solid ${selectedColor}`
+
+            // Varmistetaan, että värillä ei ole muuta käyttökohdetta. Jos väri on jo käytössä, estetään valinta.
+            if (pairs.some(pair => pair.color === selectedColor)) {
+                return
+            }
+
+            pairs.push({ type: 'image', index, color: selectedColor })
+            isImageSelected = true
+        }
+    })
+
+    // Käsittelee maan valintaa
+    countryRow.addEventListener('click', (event) => {
+        if (isChecked || !isImageSelected) return
+        const clickedCountry = event.target
+        if (clickedCountry.tagName === 'DIV' && clickedCountry.parentElement === countryRow) {
+            const index = Array.from(countryRow.querySelectorAll('div')).indexOf(clickedCountry)
+            let associatedImage = pairs.find(pair => pair.type === 'image' && !pair.used)
+            if (associatedImage) {
+                clickedCountry.style.border = `5px solid ${associatedImage.color}`
+                pairs.push({ type: 'country', index, color: associatedImage.color })
+                associatedImage.used = true
+                isImageSelected = false
+            }
+        }
+    })
 
     // TYHJENNÄ VALINNAT -painike
     resetButton.addEventListener('click', () => {
@@ -139,44 +172,7 @@ document.addEventListener('DOMContentLoaded', () => {
         nextButton.disabled = true
     })
 
-    // Käsittelee kuvan valintaa
-    imageRow.addEventListener('click', (event) => {
-        if (isChecked || isImageSelected) return
-        const clickedImage = event.target
-        if (clickedImage.tagName === 'IMG') {
-            const game = games[currentGameIndex]
-            const index = Array.from(imageRow.querySelectorAll('img')).indexOf(clickedImage)
-            const selectedColor = game.colors[index]
-            clickedImage.style.border = `5px solid ${selectedColor}`
-
-            // Varmistetaan, että värillä ei ole muuta käyttökohdetta. Jos väri on jo käytössä, estetään valinta
-            if (pairs.some(pair => pair.color === selectedColor)) {
-                return
-            }
-
-            pairs.push({ type: 'image', index, color: selectedColor })
-            isImageSelected = true
-        }
-    })
-
-    // Käsittelee maan valintaa
-    countryRow.addEventListener('click', (event) => {
-        if (isChecked || !isImageSelected) return
-        const clickedCountry = event.target
-        if (clickedCountry.tagName === 'DIV' && clickedCountry.parentElement === countryRow) {
-            const game = games[currentGameIndex]
-            const index = Array.from(countryRow.querySelectorAll('div')).indexOf(clickedCountry)
-            let associatedImage = pairs.find(pair => pair.type === 'image' && !pair.used)
-            if (associatedImage) {
-                clickedCountry.style.border = `5px solid ${associatedImage.color}`
-                pairs.push({ type: 'country', index, color: associatedImage.color })
-                associatedImage.used = true
-                isImageSelected = false
-            }
-        }
-    })
-
-    // Käsittelee tarkistuspainikkeen toimintaa
+    // TARKISTUS-PAINIKE
     checkButton.addEventListener('click', () => {
         const game = games[currentGameIndex]
         const correctPairs = game.images.map((image, i) => ({
@@ -229,19 +225,22 @@ document.addEventListener('DOMContentLoaded', () => {
         checkButton.disabled = true
         nextButton.disabled = false
         resetButton.disabled = true
+
+        addPoints() //Lisätään pisteet session storageen. Toimiiko?
     })  
 
     // SEURAAVA-PAINIKE -> Siirry seuraavaan peliin. Poistaa kaikkii avoimet popoverit
     nextButton.addEventListener('click', () => {
-    const imageElements = imageRow.querySelectorAll('img')
-    imageElements.forEach((img) => {
-        const instance = bootstrap.Popover.getInstance(img)
-        if (instance) {
-            instance.dispose()
-        }
-    })
+        const imageElements = imageRow.querySelectorAll('img')
+        imageElements.forEach((img) => {
+            const instance = bootstrap.Popover.getInstance(img)
+            if (instance) {
+                instance.dispose()
+            }
+        })
 
         resetBorders()
+
         if (currentGameIndex < games.length - 1) {
             currentGameIndex++
             updateGame()
@@ -250,9 +249,10 @@ document.addEventListener('DOMContentLoaded', () => {
             checkButton.disabled = true
             nextButton.disabled = true
         }
-        addPoints() //Kokeilu, lisätään pisteet session storageen. Toimiiko?
     })
 
     // Käynnistää ensimmäisen pelin
     updateGame()
 })
+
+//Tässä koodissa on hyödynnetty tekoälyn esimerkkejä ratkaisujen teossa (Chat GPT, Copilot).

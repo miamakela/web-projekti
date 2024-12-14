@@ -77,6 +77,22 @@ main {
     padding: 10px;
 }
 
+#gameRound {
+    display: inline-block;
+    background-color: #94b4d0;
+    color: #f3f9ff;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+    height: 100%;
+    border-radius: 50%;
+    margin: 10px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
 #image-row img {
     max-width: 260px;
     border: 5px solid #f3f9ff;
@@ -149,6 +165,6 @@ p.footer {
     }
 
     #image-row img {
-        max-width: 160px;
+        max-width: 150px;
     }
 }

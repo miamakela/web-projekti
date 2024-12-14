@@ -78,8 +78,7 @@ main {
 }
 
 #image-row img {
-    width: 30vw;
-    max-width: 225px;
+    max-width: 260px;
     border: 5px solid #f3f9ff;
     cursor: pointer;
     margin: 2px;
@@ -147,5 +146,9 @@ p.footer {
 @media (max-width: 1025px) {
     .image-container img {
         max-width: 200px; /* Kuva ei mene suuremmaksi kuin 200px */
+    }
+
+    #image-row img {
+        max-width: 160px;
     }
 }

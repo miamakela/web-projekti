@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
         gameRoundElement.textContent = `Peli ${currentGameIndex + 1}/3`
 
         // Päivitä palaute
-        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä.'
+        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä. Kun olet yhdistäyt kaikki kuvat ja maat, paina "tarkista"-näppäintä. Tämän jälkeen näet oikeat vastaukset. Oikeat vastaukset tunnistat vihreästä väristä ja väärät punaisesta. Klikkaamalla kuvia saat lisätietoa maista.'
     }
 
     // Tyhjennä valinnat
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         pairs = []
         isImageSelected = false
 
-        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä.'
+        feedbackElement.textContent = 'Yhdistä kaikki kuvat ja maat klikkaamalla ensin kuvaa ja sitten maan nimeä. Kun olet yhdistäyt kaikki kuvat ja maat, paina "tarkista"-näppäintä. Tämän jälkeen näet oikeat vastaukset. Oikeat vastaukset tunnistat vihreästä väristä ja väärät punaisesta. Klikkaamalla kuvia saat lisätietoa maista.'
         checkButton.disabled = false
         nextButton.disabled = true
     })

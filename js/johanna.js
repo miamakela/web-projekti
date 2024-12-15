@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         {src: '../img/johanna/3.png', country: 'Islanti', correct: 'Islanti', hint: 'Tyypillinen piirre on geoterminen lämpö ja tunnettu kuumista lähteistä.'},
         {src: '../img/johanna/4.png', country: 'Yhdysvallat', correct: 'Yhdysvallat', hint: 'Täällä on tunnettuja nähtävyyksiä kuten tämä Grand Canyon tai esimerkiksi Vapaudenpatsas'},
         {src: '../img/johanna/5.png', country: 'Australia', correct: 'Australia', hint: 'Upeita hiekkarantoja ja hyvät surffailu mahdollisuudet.'},
-        {src: '../img/johanna/6.png', country: 'Kiina', correct: 'Kiina', hint: 'Tunnettu lohikäärmesymnboleista ja keisareista.'},
+        {src: '../img/johanna/6.png', country: 'Kiina', correct: 'Kiina', hint: 'Tunnettu lohikäärmesymboleista ja keisareista.'},
         {src: '../img/johanna/7.png', country: 'Arktinen alue', correct: 'Arktinen alue', hint: 'Tunnettu äärimmäisestä kylmyydestä ja siellä sijaitsee pohjoisnapa.'},
         {src: '../img/johanna/8.png', country: 'Suomi', correct: 'Suomi', hint: 'Täällä tiedetään joulupukin asuvan.'},
         {src: '../img/johanna/9.png', country: 'Sahara', correct: 'Sahara', hint: 'Maailman suurin kuuma aavikko, jossa kameli on tärkeä kulkuväline.'},
@@ -87,6 +87,9 @@ document.addEventListener("DOMContentLoaded", function() {
         } 
         else {
             alert("Nyt ei mennyt oikein. Oikea vastaus on: " + currentCountry.correct);
+
+            const hintContainer = document.getElementById("hint");
+            hintContainer.style.display = "none";
         }
 
         currentImageIndex++;

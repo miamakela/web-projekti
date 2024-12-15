@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".card");
+const cards = document.querySelectorAll(".card"); // koodia otettu suurimmaksi osaksi https://www.youtube.com/watch?v=DABkhfsBAWw, jota sitten muokattu että saan toimimaan. kuvat tehty canvalla/ maapallo pixabay
 
 let matchedCard = 0; // Löydetyt parit
 let cardOne = null, cardTwo = null;

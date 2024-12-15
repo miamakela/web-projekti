@@ -15,28 +15,23 @@ header {
 }
 
 h2 {
-    margin: 10px;
-    padding: 10px;
+    margin-left: 10px;
 }
 
-/*home-nappulan muotoilu*/
 a.navbar-brand {
     color: black;
     font-size: 40px;
 }
 
-/*lisätty välistystä nav-elementtien väliin*/
 .nav-item {
     margin: 0 15px;
 }
 
-/*vaihdettu alasvetovalikon taustaväri ja fonttikoko*/
 ul.dropdown-menu {
     background-color: #6791b8;
     font-size: 20px;
 }
 
-/*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä. Väri ok?*/
 a.dropdown-item:hover {
     background-color: #3a6da1;
 }
@@ -45,8 +40,9 @@ main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
 
-.row h1 {
-    margin: 5px;
+#gametitle {
+    text-align: center;
+    padding: 20px;
 }
 
 .speech-bubble {
@@ -55,6 +51,7 @@ main {
     border-radius: .4em;
     padding: 5px;
     margin: 5px;
+    text-align: center;
 }
 
 .speech-bubble::after {
@@ -106,9 +103,9 @@ main {
 }
 
 #country-row {
-    justify-content: center; /* Keskittää sisällön pystysuunnassa */
-    align-items: center; /* Keskittää sisällön vaakasuunnassa */
-    height: 100%; /* Varmistaa, että elementti vie koko korkeuden */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 #country-row div {
@@ -121,7 +118,6 @@ main {
     cursor: pointer;
 }
 
-
 #button-row button {
     background-color: #3a6da1;
     color: #f3f9ff;
@@ -130,15 +126,8 @@ main {
 }
 
 .popover {
-    width: 270px;     /* Määritetään kiinteä leveys */
+    width: 270px;
 }
-
-/*.popover-header {
-    background-color: #3a6da1 !important;
-    color: #ffffff !important;
-    font-weight: bold;
-    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-}*/
 
 .popover-body {
     background-color: #94b4d0 !important;
@@ -157,14 +146,15 @@ footer {
     height: 10vh;
     margin-top: auto;
 }
+
 p.footer {
     text-align: end;
 }
 
-/* Mobiilinäkymässä kuva on pienempi */
+
 @media (max-width: 1025px) {
     .image-container img {
-        max-width: 200px; /* Kuva ei mene suuremmaksi kuin 200px */
+        max-width: 200px;
     }
 
     #image-row img {
@@ -172,7 +162,7 @@ p.footer {
     }
 
     .popover {
-        width: 45%;     /* Määritetään kiinteä leveys */
+        width: 45%;
     }
 
     .popover-body {

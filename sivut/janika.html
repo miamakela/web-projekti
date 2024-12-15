@@ -48,12 +48,12 @@
             <h5> <img src="../img/janika/muistatko.png"></h5> 
              <div class="speech-bubble"> <b>Tiukun muistipeli</b> <br> Opettele pääkaupunkeja! </div>
              <img src="../img/yhteiset/tiuku_tiikeri.webp" alt="tiger">
-           
         </div>
 
         <div class="grid-item grid-item-2">
             <div class="counter">
-                <span id="pairs-found">0</span> /8   paria 
+                <span id="pairs-found">0</span> /8 paria
+                <button onclick="playAgain()">Pelaa uudelleen</button>
             </div>
             <div class="wrapper">
                 <ul class="cards">
@@ -169,6 +169,17 @@
                     <div class="view back-view">
                         <img src="../img/janika/img0.png" alt="card-img">
                     </li> 
+                    
+                    <script>
+                        // Hae pisteet sessionStoragesta
+                        const score = sessionStorage.getItem("score");
+                        document.getElementById("score-display").textContent = `Löysit ${score} paria!`;
+                
+                        // Aloita uusi peli
+                        function playAgain() {
+                            window.location.href = "./janika.html"; // Takaisin pelin aloitussivulle
+                        }
+                    </script>
                 </ul>
                 
             </div>

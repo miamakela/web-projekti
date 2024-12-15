@@ -1,4 +1,4 @@
-const cards = document.querySelectorAll(".card"); // koodia otettu suurimmaksi osaksi https://www.youtube.com/watch?v=DABkhfsBAWw, jota sitten muokattu että saan toimimaan. kuvat tehty canvalla/ maapallo pixabay
+const cards = document.querySelectorAll(".card");
 
 let matchedCard = 0; // Löydetyt parit
 let cardOne = null, cardTwo = null;
@@ -47,7 +47,7 @@ function matchCards(img1, img2) {
         resetCards();
 
         if (matchedCard === totalPairs) {
-            setTimeout(shuffleCard, 1000); // Peli loppuu
+            setTimeout(endGame, 500); // Lopeta peli ja tallenna pisteet
         }
     } else {
         // Kortit eivät ole pari, ravistetaan ja käännetään takaisin
@@ -88,15 +88,16 @@ function shuffleCard() {
         card.addEventListener("click", flipCard);
     });
 }
+
+// Lopeta peli ja tallenna pisteet
 function endGame() {
-    sessionStorage.setItem("score", pairs)
+    sessionStorage.setItem("score", matchedCard); // Tallenna pisteet
+    alert(`Voitit pelin! Pisteet: ${matchedCard}`); // Näytä voittoviesti
+
 }
 
+// Pelin aloitus
 shuffleCard(); // Käynnistä peli
 cards.forEach(card => {
     card.addEventListener("click", flipCard); // Lisää klikkauskuuntelijat kortteihin
 });
-
-
-
-

@@ -53,13 +53,34 @@ img {
 }
 
 button {
-    width: 90%;
-    height: 6vh;
-    color: #cde2d3;
-    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
     background-color: #f3d77d;
-    cursor: pointer;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid black;
+    margin: 0; 
+    padding: 0;
+    cursor: pointer; 
 }
+
+
+.counter  {
+    display: flex;
+    place-items: center;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    
+}
+
 .speech-bubble {
     position: relative;
     background: #fbf8f2;
@@ -84,31 +105,6 @@ button {
     margin-bottom: -14px ;
 }
 
-.counter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #f3d77d;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    border: 3px solid black;
-    margin: 0;
-    padding: 0;
-    justify-self: center;
-    align-self: center;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
 .grid-container {
     display: grid;
     grid-template-columns: auto 2fr;
@@ -122,13 +118,10 @@ button {
     text-align: center;
 }
 
-
 .grid-item-2 {
     display: grid;
     align-items: center;
     justify-content: center;
-    
-    
 }
 
 .wrapper  {
@@ -138,8 +131,6 @@ button {
     padding: 25px;
 
 }
-
-
 
 .cards, .card, .view {
     display: flex;
@@ -154,7 +145,6 @@ button {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 
 .cards .card {
     cursor: pointer;
@@ -198,21 +188,20 @@ button {
     transition: transform 0.25s linear;
     box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
+
 .card .front-view span {
     font-size: 45px;
     content: center;
 } 
+
 .card .front-view {
     transform: rotateY(0); /*etupuoli näkyy*/
-    
-    
 }
-
+ 
 .card .back-view {
     transform: rotateY(-180deg); /*takapuoli käännetty*/
     
 }
-
 
 .card.flip .front-view {
     transform: rotateY(180deg); /*etupuoli pois*/
@@ -221,29 +210,6 @@ button {
 .card.flip .back-view {
     transform: rotateY(0); /*takapuoli esiin*/
 }
-
-
-/*.reset
-{
-    padding: 15px 20px;
-    color: #fbf1c6 ;
-    background: #f3d77d;
-    border: none;
-    font: 1,5em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*.reset:focus 
-{
-    color:#f3d77d;
-    background:#fbf1c6 ;
-}*/
-
 
 footer {
     background-color: #f3d77d;

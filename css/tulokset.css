@@ -102,21 +102,19 @@ p.footer {
 }
 
 .total {
-    min-height: 300px;
+    background-color: #fbf8f2;
+    height: 300px;
     width: 300px;
     border-radius: 50%;
-    background-color: #fbf8f2;
-    justify-items: center;
-    justify-content: center;
-    justify-self: center;
-    align-items: center;
-    align-content: center;
+}
+
+#totalpoints {
+    display: flex;
 }
 
 .total span {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -50px;
+    transform: translateX(-70%);
     font-size: 22px;
     color: black;
     text-align: center;
@@ -189,5 +187,16 @@ p.footer {
     .peli1, .peli2, .peli3, .peli4, .peli5 {
         height: 150px;
         width: 150px;
+    }
+
+    .total {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (min-width: 1023px) {
+    .total {
+        margin-top: 200px;
     }
 }

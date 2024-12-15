@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function endGame() {
-        sessionStorage.setItem("score", score)
+        sessionStorage.setItem("peli3", score.toString())
 
         content.innerHTML = `
             <div class="end d-block my-auto">

@@ -1,3 +1,7 @@
+* {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
 html, body {
     height: 100%;
     background-color: #f5aa6b;
@@ -33,6 +37,10 @@ ul.dropdown-menu {
 /*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä*/
 a.dropdown-item:hover {
     background-color: #f28c38;
+}
+
+h2{
+    margin-left: 10px;
 }
 
 .info {

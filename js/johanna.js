@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const gameOverElement = document.getElementById("game-over");
     const finalScore = document.getElementById("final-score");
 
+    function endGame() {
+        sessionStorage.setItem("score", score)
+
     function showImage() {
 
         if (currentImageIndex >= countries.length) {

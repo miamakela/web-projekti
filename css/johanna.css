@@ -87,6 +87,10 @@ aside img{
     text-align: center;  
 }
 
+h2{
+    font-size: 25px;
+}
+
 .image-container img {
     width: 100%;   
     height: auto; 

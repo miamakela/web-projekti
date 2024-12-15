@@ -13,45 +13,45 @@ document.addEventListener("DOMContentLoaded", function() {
     ];
 
     let currentImageIndex = 0;
-    let score = 0; 
+    let score = 0;
 
-    const countryContainer = document.getElementById("countries"); 
+    const countryContainer = document.getElementById("countries");
     const dropArea = document.getElementById("drop-area");
     const pageNumber = document.getElementById("page-number");
     const gameOverElement = document.getElementById("game-over");
     const finalScore = document.getElementById("final-score");
 
     function endGame() {
-        sessionStorage.setItem("score", score)
+        
+        sessionStorage.setItem("score2", score);
+        
+        const gameElement = document.getElementById("game");
+        const imageNumberElement = document.getElementById("image-number");
+        gameElement.style.display = "none";
+        imageNumberElement.style.display = "none";
+        gameOverElement.style.display = "block"; 
+        finalScore.textContent = `Sait oikein ${score}/${countries.length}. Hyvin tehty!`;
+    }
 
     function showImage() {
-
         if (currentImageIndex >= countries.length) {
-
-            const gameElement = document.getElementById("game"); 
-            const imageNumberElement = document.getElementById("image-number");
-            gameElement.style.display = "none";
-            imageNumberElement.style.display = "none";
-            gameOverElement.style.display = "block";
-            finalScore.textContent = `Sait oikein ${score}/${countries.length}. Hyvin tehty!`;
-            hintContainer.style.display = "none";
+            endGame(); 
             return;
         }
 
         const countryImage = countries[currentImageIndex];
-
         dropArea.style.backgroundImage = `url(${countryImage.src})`;
 
         pageNumber.textContent = `Kuva ${currentImageIndex + 1}/10`;
 
-        countryContainer.innerHTML = ''; 
-        let options = new Set([countryImage]);      //vaihtoehdot https://www.w3schools.com/jsref/jsref_obj_set.asp
-        while (options.size < 4) { 
+        countryContainer.innerHTML = '';                    //https://www.w3schools.com/js/js_sets.asp
+        let options = new Set([countryImage]);
+        while (options.size < 4) {
             const randomCountry = countries[Math.floor(Math.random() * countries.length)];
-            options.add(randomCountry); 
+            options.add(randomCountry);
         }
-        
-        options = Array.from(options);   // sort-metodi https://www.w3schools.com/js/js_array_sort.asp#mark_sort
+
+        options = Array.from(options);              //https://www.w3schools.com/jsref/jsref_foreach.asp
         options.sort(() => Math.random() - 0.5);
 
         options.forEach(countryItem => {
@@ -59,19 +59,17 @@ document.addEventListener("DOMContentLoaded", function() {
             countryElement.classList.add("country");
             countryElement.textContent = countryItem.country;
             countryElement.draggable = true;
-        
-            
+
             countryElement.addEventListener("dragstart", function(event) {
                 event.dataTransfer.setData("text", countryItem.country);
             });
-        
+
             countryContainer.appendChild(countryElement);
         });
-        
     }
 
     dropArea.addEventListener("dragover", function(event) {
-        event.preventDefault();   //w3school
+        event.preventDefault();
     });
 
     dropArea.addEventListener("drop", function(event) {
@@ -86,9 +84,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
             const hintContainer = document.getElementById("hint");
             hintContainer.style.display = "none";
-
-        } 
-        else {
+            
+        } else {
             alert("Nyt ei mennyt oikein. Oikea vastaus on: " + currentCountry.correct);
 
             const hintContainer = document.getElementById("hint");
@@ -105,8 +102,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     hintButton.addEventListener("click", function() {
         const currentCountry = countries[currentImageIndex];
-        hintText.textContent = currentCountry.hint;  // Asetetaan vihje
-        hintContainer.style.display = "block";  // Näytetään vihje
+        hintText.textContent = currentCountry.hint;
+        hintContainer.style.display = "block";
     });
 
     showImage();

@@ -1,0 +1,258 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+header {
+    background-color: #f3d77d ;
+    font-size: 25px;
+    color: black;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+ 
+}
+
+/*home-nappulan muotoilu*/
+a.navbar-brand {
+    color: black;
+    font-size: 40px;
+}
+
+/*lisätty välistystä nav-elementtien väliin*/
+.nav-item {
+    margin: 0 15px;
+}
+
+/*vaihdettu alasvetovalikon taustaväri ja fonttikoko*/
+ul.dropdown-menu {
+    background-color: #fbf1c6;
+    font-size: 20px;
+}
+
+/*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä*/
+a.dropdown-item:hover {
+    background-color: #f3d77d ;
+}
+
+main {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    font-size: 24px;
+}
+
+
+img {
+    max-width: 84%;
+}
+
+.option {
+    margin: 3vh;
+    border-radius: 10%;
+}
+
+button {
+    width: 90%;
+    height: 6vh;
+    color: #cde2d3;
+    border: 2px solid black;
+    background-color: #f3d77d;
+    cursor: pointer;
+}
+.speech-bubble {
+    position: relative;
+    background: #fbf8f2;
+    border-width: 4px;
+    border-radius: .4em;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 14px solid transparent;
+    border-top-color: #fbf8f2;
+    border-bottom: 0;
+    margin-left: -7px;
+    margin-bottom: -14px ;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f3d77d;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 3px solid black;
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    background-color: #fbf1c6 ;
+   
+}
+.grid-item-1 {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.grid-item-2 {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.wrapper  {
+    height: 650px;
+    width: 650px;
+    border-radius: 15px;
+    padding: 25px;
+
+}
+
+
+
+.cards, .card, .view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.cards {
+    height: 100% ;
+    width: 100% ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.cards .card {
+    cursor: pointer;
+    position: relative;
+    perspective: 800px;
+    transform-style: preserve-3d;
+    height: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 10px);
+}
+
+.card.shake {
+    animation: shake 0.35s ease-in-out;
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-13px);
+    }
+    40% {
+        transform: translateX(13px);
+    }
+    60% {
+        transform: translateX(-8px);
+    }
+    80% {
+        transform: translateX(8px);
+    }
+}
+
+.cards .card .view{
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+    background: white;
+    position: absolute;
+    border-radius: 7px;
+    backface-visibility: hidden;
+    transition: transform 0.25s linear;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.card .front-view span {
+    font-size: 45px;
+    content: center;
+} 
+.card .front-view {
+    transform: rotateY(0); /*etupuoli näkyy*/
+    
+    
+}
+
+.card .back-view {
+    transform: rotateY(-180deg); /*takapuoli käännetty*/
+    
+}
+
+
+.card.flip .front-view {
+    transform: rotateY(180deg); /*etupuoli pois*/
+}
+
+.card.flip .back-view {
+    transform: rotateY(0); /*takapuoli esiin*/
+}
+
+
+/*.reset
+{
+    padding: 15px 20px;
+    color: #fbf1c6 ;
+    background: #f3d77d;
+    border: none;
+    font: 1,5em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.reset:focus 
+{
+    color:#f3d77d;
+    background:#fbf1c6 ;
+}*/
+
+
+footer {
+    background-color: #f3d77d;
+    font-size: 20px;
+    text-align: end;
+    color: black;
+    font-weight: bold;
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+    height: 10vh;
+    margin-top: auto;
+    
+}

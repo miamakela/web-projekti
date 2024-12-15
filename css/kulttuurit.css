@@ -14,6 +14,11 @@ header {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
 
+h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
 /*home-nappulan muotoilu*/
 a.navbar-brand {
     color: black;
@@ -77,9 +82,24 @@ main {
     padding: 10px;
 }
 
+#gameRound {
+    display: inline-block;
+    background-color: #94b4d0;
+    color: #f3f9ff;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 80px;
+    width: 80px;
+    height: 100%;
+    border-radius: 50%;
+    margin: 10px auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
 #image-row img {
-    width: 30vw;
-    max-width: 225px;
+    max-width: 260px;
     border: 5px solid #f3f9ff;
     cursor: pointer;
     margin: 2px;
@@ -110,22 +130,20 @@ main {
 }
 
 .popover {
-    max-width: 300px; /* Määritetään maksimileveys */
-    width: 170px;     /* Määritetään kiinteä leveys */
-    height: 100px;    /* Määritetään korkeus */
+    width: 270px;     /* Määritetään kiinteä leveys */
 }
 
-.popover-header {
+/*.popover-header {
     background-color: #3a6da1 !important;
     color: #ffffff !important;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-}
+}*/
 
 .popover-body {
     background-color: #94b4d0 !important;
-    color: #ffffff !important;
-    font-size: 13px;
+    color: #f3f9ff !important;
+    font-size: 17px;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     border: 2px solid #3a6da1;
 }
@@ -147,5 +165,17 @@ p.footer {
 @media (max-width: 1025px) {
     .image-container img {
         max-width: 200px; /* Kuva ei mene suuremmaksi kuin 200px */
+    }
+
+    #image-row img {
+        max-width: 150px;
+    }
+
+    .popover {
+        width: 45%;     /* Määritetään kiinteä leveys */
+    }
+
+    .popover-body {
+        font-size: 13px;
     }
 }

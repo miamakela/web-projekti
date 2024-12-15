@@ -88,6 +88,9 @@ function shuffleCard() {
         card.addEventListener("click", flipCard);
     });
 }
+function endGame() {
+    sessionStorage.setItem("score", pairs)
+}
 
 shuffleCard(); // Käynnistä peli
 cards.forEach(card => {

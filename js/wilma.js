@@ -1,6 +1,18 @@
 window.onload = function() {
     const questions = ['Kumpi lipuista on Brazilian lippu?', 'Kumpi lipuista on Suomen lippu?', 'Kumpi lipuista on Ranskan lippu?', 'Kumpi lipuista on Saksan Lippu?', 'Kumpi lipuista on Italian lippu?', 'Kumpi lipuista on Japanin lippu?', 'Kumpi lipuista on Ruotsin lippu?', 'Kumpi lipuista on Englannin lippu?', 'Kumpi lipuista on Amerikan lippu?', 'Kumpi lipuista on Kanadan lippu?'];
     const answers = ['a', 'a', 'b', 'a', 'b', 'b', 'a', 'a', 'b', 'b'];
+    const correctAnswers = [
+        'Bulgarian lippu.',
+        'Intian lippu.',
+        'Israelin lippu.',
+        'Sudanin lippu.',
+        'Turkin lippu.',
+        'Vietnamin lippu.',
+        'Islannin lippu.',
+        'Tanskan lippu.',
+        'Kuuban lippu.',
+        'Latvian lippu.',
+    ];
     let index = 0;
     const maxindex = questions.length - 1;
 
@@ -60,7 +72,7 @@ window.onload = function() {
         index++;
         if (index > maxindex) {
             console.log('game over');
-
+            endGame();
             images[1].style.display = 'none';
             images[2].style.display = 'none';
             replayButton.style.display = 'block';
@@ -79,17 +91,8 @@ window.onload = function() {
         currentScore++;
         scoreDisplay.textContent = `${currentScore}/${maxScore}`;
     }
-
-    const correctAnswers = [
-        'Bulgarian lippu.',
-        'Intian lippu.',
-        'Israelin lippu.',
-        'Sudanin lippu.',
-        'Turkin lippu.',
-        'Vietnamin lippu.',
-        'Islannin lippu.',
-        'Tanskan lippu.',
-        'Kuuban lippu.',
-        'Latvian lippu.',
-    ];
-};
+    
+    function endGame() {
+        sessionStorage.setItem("pisteet", currentScore)
+    }
+}

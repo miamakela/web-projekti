@@ -8,7 +8,7 @@ html, body {
 
 header {
     background-color: #f3d77d ;
-    font-size: 25px;
+    font-size: 30px;
     color: black;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
@@ -35,6 +35,10 @@ ul.dropdown-menu {
 /*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä*/
 a.dropdown-item:hover {
     background-color: #f3d77d ;
+}
+
+h2{
+    margin-left: 10px;
 }
 
 main {

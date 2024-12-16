@@ -15,24 +15,20 @@ header {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
 
-/*home-nappulan muotoilu*/
 a.navbar-brand {
     color: black;
     font-size: 40px;
 }
 
-/*lisätty välistystä nav-elementtien väliin*/
 .nav-item {
     margin: 0 15px;
 }
 
-/*vaihdettu alasvetovalikon taustaväri ja fonttikoko*/
 ul.dropdown-menu {
     background-color: #f8c39b;
     font-size: 20px;
 }
 
-/*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä*/
 a.dropdown-item:hover {
     background-color: #f28c38;
 }
@@ -40,6 +36,7 @@ a.dropdown-item:hover {
 h2{
     margin-left: 10px;
 }
+
 main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     font-size: 20px;
@@ -59,7 +56,7 @@ aside p {
 }
 
 #content {
-    min-height: 75vh;
+    min-height: 76vh;
     background-color: #fde2d3;
     flex-grow: 1;
     overflow: auto;
@@ -71,6 +68,7 @@ aside p {
     border-radius: .4em;
     padding: 20px;
     margin: 20px;
+    font-size: 25px;
 }
 
 .speech-bubble::after {
@@ -158,30 +156,33 @@ p.footer {
     position: relative;
 }
 
-.peli1 span, .peli2 span, .peli3 span, .peli4 span, .peli5 span {
+.peli1 h4, .peli2 h4, .peli3 h4, .peli4 h4, .peli5 h4 {
     position: absolute;
     top: -32px; /* Teksti tulee pallon yläpuolelle */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 22px;
+    font-size: 25px;
     color: black;
     text-align: center;
 }
 
 .peli1 p, .peli2 p, .peli3 p, .peli4 p, .peli5 p {
     position: absolute;
+    text-align: center;
+    align-content: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65%;
-    height: 65%;
-    object-fit: contain;
+    font-size: 35px;
 }
 
 @media (max-width: 768px) {
     .games {
+        display: flex;
+        flex-wrap: wrap;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Pienentää palluroita pienillä näytöillä */
         gap: 15px;
+        justify-content: center;
     }
 
     .peli1, .peli2, .peli3, .peli4, .peli5 {
@@ -189,14 +190,7 @@ p.footer {
         width: 150px;
     }
 
-    .total {
-        height: 200px;
-        width: 200px;
-    }
+    .peli1 p, .peli2 p, .peli3 p, .peli4 p, .peli5 p {
+        font-size: 22px;
 }
-
-@media (min-width: 1023px) {
-    .total {
-        margin-top: 200px;
-    }
 }

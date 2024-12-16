@@ -40,6 +40,7 @@ a.dropdown-item:hover {
 h2{
     margin-left: 10px;
 }
+
 main {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
     font-size: 20px;
@@ -55,7 +56,7 @@ aside {
 aside p {
     font-size: 25px;
     padding: 10px;
-    margin-bottom: 90px;
+    margin-bottom: 20px;
 }
 
 #content {
@@ -71,6 +72,7 @@ aside p {
     border-radius: .4em;
     padding: 20px;
     margin: 20px;
+    font-size: 25px;
 }
 
 .speech-bubble::after {

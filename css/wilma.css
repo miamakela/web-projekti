@@ -12,9 +12,11 @@ header {
     color: black;
     font-weight: bold;
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-    text-align: center;
 }
 
+h2{
+    margin-left: 10px;
+}
 
 a.navbar-brand {
     color: black;

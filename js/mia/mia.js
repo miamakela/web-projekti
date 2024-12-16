@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let tip = document.getElementById("tip")
     let funFact = document.getElementById("funFact")
 
+    /* Haetaan json-tiedosto, virheenkäsittelyä*/
     fetch("../js/mia/attractions.json")
         .then(response => response.json())
         .then(data => initGame(data))
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         getQuestion()
     }
 
+    /* Funktio, joka sekoittaa kysymysten järjestyksen */
     function shuffleArray(array) {
         const shuffledArray = [...array];
         for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -30,6 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return shuffledArray;
     }
 
+    /* Haetaan nykyistä indexiä vastaava kysymys, sijoitetaan tip spaniin vinkki, 
+    määritellään kuvan lähde ja annetaan sille class, joka tyyleisssä tekee kuvasta epäselvän.
+    Sijoitetaan vastausvaihtoehdot ja tapahtuma sen painamiseen. Tyhjennetään funfact span. 
+    Määritetään painike, jolla pääsee seuraavaan kysymykseen, joka katoaa sitä painettaessa.*/
     function getQuestion() {
         const question = questions[currentIndex]
         tip.textContent = question.tip
@@ -49,6 +55,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (next) next.remove()
     }
 
+    /* Haetaan nykyistä indexiä vastaava kysymys. Määritellään oikean vastauksen indexi. 
+    Annetaan oikealle ja väärälle vastaukselle classit, jotka css:ssä saavat värit vihreä ja punainen.
+    Jos vastaus oikein, kasvatetaan scorea. 
+    Poistetaan kuvasta class, jotta alkuperäinen kuva tulee näkyviin ja sijoitetaan hauska fakta nähtävyydestä funfact spaniin.
+    Luodaan painike, joka ilmestyy vastauksen jälkeen ja vie seuraavaan kysymykseen.*/
     function checkAnswer(selectedIndex) {
         const question = questions[currentIndex]
 
@@ -78,13 +89,16 @@ document.addEventListener("DOMContentLoaded", () => {
         answerArea.appendChild(next)
     }
 
+    /* Funktio, joka päivittää kuinka mones kysymys on menossa.*/
     function updateCounter() {
         if (counter) {
             let currentValue = parseInt(counter.textContent)
             counter.textContent = currentValue + 1
         }
     }
-
+    
+    /* Funktio joka hakee seuraavan kysymyksen ja pitää huolta siitä, että peli loppuu, kun kysymykset loppuvat.
+    Jos kysymyksiä ei ole jäljellä, peli loppuu. */
     function nextQuestion() {
         currentIndex++
         updateCounter()
@@ -95,6 +109,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+     /* Funktio pelin päättymiseen. 
+     Viedään pisteet sessionstorageen.
+     Kerrotaan pelaajalle paljonko pisteitä hän sai ja luodaan painikkeet, joilla pääsee etusivulle, pelaamaan uudestaan tai seuraavaan peliin (liput).
+     Määritellään, mitä tapahtuu kun painikkeita painetaan. */
     function endGame() {
         sessionStorage.setItem("peli3", score.toString())
 

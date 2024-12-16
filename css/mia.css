@@ -14,24 +14,20 @@ header {
     font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
 }
 
-/*home-nappulan muotoilu*/
 a.navbar-brand {
     color: black;
     font-size: 40px;
 }
 
-/*lisätty välistystä nav-elementtien väliin*/
 .nav-item {
     margin: 0 15px;
 }
 
-/*vaihdettu alasvetovalikon taustaväri ja fonttikoko*/
 ul.dropdown-menu {
     background-color: #a0c4aa;
     font-size: 20px;
 }
 
-/*vaihdettu alasvetovalikon taustaväri, kun hiiri on itemin päällä*/
 a.dropdown-item:hover {
     background-color: #4a7c59;
 }

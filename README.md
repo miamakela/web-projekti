@@ -30,5 +30,5 @@ Taj Mahal - © Chaerani, Meutia https://upload.wikimedia.org/wikipedia/commons/5
 #
 Luonto- ja pääkaupungit sivun kuvat otettu pixabay:sta.
 #
-Linkki pelin esittelyvideoon - https://unioulu-my.sharepoint.com/:v:/g/personal/n3masi00_students_oamk_fi/EXIaQnqCdvNCrwhQ2arvb6ABfN-PXs_CHav70GwN1CJtYw?e=zL6aRG
+Linkki pelin esittelyvideoon - https://unioulu-my.sharepoint.com/:v:/g/personal/n3masi00_students_oamk_fi/EXIaQnqCdvNCrwhQ2arvb6ABfN-PXs_CHav70GwN1CJtYw?e=zL6aRG  
 Sivuston julkaisulinkki - https://miamakela.github.io/web-projekti/

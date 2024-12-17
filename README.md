@@ -7,12 +7,25 @@ Janika Lehtola github: jasss-u
 Johanna Jaanus github: johannajaanus  
 #
 Etusivulla käytettyjen kuvien lähteet:
+
+Tiuku-Tiikeri - Tehty tekoälyllä
+
+Karttapallo - Pixabay
+
 Kahvikuppi - © McMillen, Clint https://openclipart.org/detail/65569/johnny-coffee-2
+
+Eiffeltorni - Wikimedia
+
+Lippu - Vecteezy
+
+Puu - Pixabay
 #
 Kulttuurit-sivulla käytettyjen kuvien lähteet:
+
 Luotu Copilot-tekoälyllä
 #
-Nähtävyydet sivulla käytettyjen kuvien lähteet: 
+Nähtävyydet sivulla käytettyjen kuvien lähteet:
+
 Chichen Itza - © Maddox, Cynthia https://pixabay.com/photos/ruins-chichen-itza-mexico-732140/  
 
 Colosseum - © Kohl, Allan T. https://www.flickr.com/photos/69184488@N06/11971367726  

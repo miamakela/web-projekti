@@ -140,3 +140,5 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         }
 })
+
+//Tässä koodissa on hyödynnetty tekoälyn esimerkkejä ratkaisujen teossa (Chat GPT, Claude AI).

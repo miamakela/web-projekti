@@ -6,6 +6,12 @@ Wilma Malmberg github: Wilmamalmberg
 Janika Lehtola github: jasss-u                                   
 Johanna Jaanus github: johannajaanus  
 #
+Etusivulla käytettyjen kuvien lähteet:
+Kahvikuppi - © McMillen, Clint https://openclipart.org/detail/65569/johnny-coffee-2
+#
+Kulttuurit-sivulla käytettyjen kuvien lähteet:
+Luotu Copilot-tekoälyllä
+#
 Nähtävyydet sivulla käytettyjen kuvien lähteet: 
 Chichen Itza - © Maddox, Cynthia https://pixabay.com/photos/ruins-chichen-itza-mexico-732140/  
 
